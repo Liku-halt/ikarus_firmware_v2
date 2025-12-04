@@ -52,10 +52,10 @@ uint8_t acc_data = 0x3b;
 #define UART_BAUD_RATE 115200
 static const char *TAG = "APP_MAIN";
 
-// other declarations
+// other declarations  for mpu
 i2c_master_dev_handle_t mpu_handle;
 i2c_master_bus_handle_t bus;
-#define time_out 200
+#define time_out 2 //i have changed it 200ms time out to 2ms time out ...so that the calculations wont stop
 #define time_out_ticks pdMS_TO_TICKS(time_out)
 
 // motors
@@ -73,15 +73,15 @@ i2c_master_bus_handle_t bus;
 // timer and ledc cofig constants
 #define timer_speed LEDC_LOW_SPEED_MODE
 #define LEDC_timer LEDC_TIMER_0
-#define pwm_freq 20000
-#define pwm_resol LEDC_TIMER_8_BIT
+#define pwm_freq 32000
+#define pwm_resol LEDC_TIMER_10_BIT  //i changed it from 8 bit to 10 bit 
 #define LEDC_speed_mode LEDC_LOW_SPEED_MODE
-#define pwm_max_duty 253
+#define pwm_max_duty 1022
 
 //time declaratons for task
 #define time_tick pdMS_TO_TICKS(1)
 
-// floating point variables if needed
+// floating point macros if needed
 #define q_bit 16 // Q16.16 format
 #define q_bit_shift (1 << q_bit)
 #define div_64 6
@@ -253,7 +253,7 @@ void channel_config(void)
 }
 
 // making an fxn to update the pwm
-static inline void pwm_update(void)
+static IRAM_ATTR inline void pwm_update(void)
 {
     ledc_set_duty(timer_speed, mot1_cha, w.mot_th[0]);
     ledc_set_duty(timer_speed, mot2_cha, w.mot_th[1]);
@@ -268,7 +268,7 @@ static inline void pwm_update(void)
 
 // call back fxn
 // the most important fxn here it handles the esp now callback things
-void on_callback(const esp_now_recv_info_t *recv_info, const uint8_t *data_in, int len)
+void IRAM_ATTR on_callback(const esp_now_recv_info_t *recv_info, const uint8_t *data_in, int len)
 {
     // const uint8_t *mac_addr = recv_info->src_addr;
     memcpy(&data, data_in, sizeof(data));
@@ -343,7 +343,7 @@ void mpu_6050_init(void)
     vTaskDelay(pdMS_TO_TICKS(1));
     register_write(aclo_renge_reg, aclo_range_val);
 }
-static inline void get_raw_mpu(void)
+static IRAM_ATTR inline void get_raw_mpu(void)
 {
     i2c_master_transmit_receive(
         mpu_handle,
@@ -453,7 +453,7 @@ static inline int32_t abs_32(int32_t x){
     return (int32_t)(x<0 ? -(int64_t)x : x);
 }
 
-static inline int32_t angle_lut(int32_t y, int32_t x)
+static IRAM_ATTR inline int32_t angle_lut(int32_t y, int32_t x)
 {
     
     if (x == 0 && y == 0) return 0;  //if both are zero then it must output zero
@@ -610,7 +610,7 @@ void setup_1ms_timer(void) {
 }
 
 //creating tasks
-void control_task(void *pvParameters){
+void IRAM_ATTR control_task(void *pvParameters){
    // TickType_t last_wake = xTaskGetTickCount();
    while (1)
    {
@@ -623,7 +623,7 @@ void control_task(void *pvParameters){
          diff= tn-ti;
          ti= tn;
         get_raw_mpu();
-        lowpass_fil();
+        //lowpass_fil();
         bias_estim();
         error_calculation();
         pid_calc();
@@ -714,5 +714,5 @@ void app_main(void)
   
 
 
-
+ 
 }
