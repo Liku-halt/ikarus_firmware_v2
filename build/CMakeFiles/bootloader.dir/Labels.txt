@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/liku/esp/ikarus_firmware_v2/build/CMakeFiles/bootloader
+/home/liku/esp/ikarus_firmware_v2/build/CMakeFiles/bootloader.rule
+/home/liku/esp/ikarus_firmware_v2/build/CMakeFiles/bootloader-complete.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/liku/esp/ikarus_firmware_v2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

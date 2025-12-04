@@ -1,0 +1,576 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c62a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 20 2025 19:04:30[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a1f4h (106996) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0002a21c vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d054 vaddr=40380000 size=02fc4h ( 12228) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=92580h (599424) map[0m
+[0;32mI (207) esp_image: segment 4: paddr=000c25a8 vaddr=40382fc4 size=10ec4h ( 69316) load[0m
+[0;32mI (220) esp_image: segment 5: paddr=000d3474 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Unicore app[0m
+[0;32mI (246) cpu_start: Pro cpu start user code[0m
+[0;32mI (246) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) app_init: Application information:[0m
+[0;32mI (247) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (251) app_init: App version:      1[0m
+[0;32mI (255) app_init: Compile time:     Oct 20 2025 19:04:17[0m
+[0;32mI (260) app_init: ELF file SHA256:  19ae48ba9...[0m
+[0;32mI (264) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (268) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (272) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (276) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9B1D0 len 00024E30 (147 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (298) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (304) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (316) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (323) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (329) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+D (336) i2c.common: new bus(0) at 0x3fc9ec6c
+D (346) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (356) pp: pp rom version: 9387209[0m
+[0;32mI (356) net80211: net80211 rom version: 9387209[0m
+[0;32mI (366) wifi:wifi driver task: 3fca3d24, prio:23, stack:6656, core=0[0m
+[0;32mI (366) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (366) wifi:wifi certification version: v7.0[0m
+[0;32mI (366) wifi:config NVS flash: enabled[0m
+[0;32mI (376) wifi:config nano formatting: disabled[0m
+[0;32mI (376) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (376) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (386) wifi:Init management short buffer num: 32[0m
+[0;32mI (386) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (396) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (396) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (406) wifi:Init static rx buffer num: 10[0m
+[0;32mI (406) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (406) wifi_init: rx ba win: 6[0m
+[0;32mI (416) wifi_init: accept mbox: 6[0m
+[0;32mI (416) wifi_init: tcpip mbox: 32[0m
+[0;32mI (416) wifi_init: udp mbox: 6[0m
+[0;32mI (416) wifi_init: tcp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp tx win: 5760[0m
+[0;32mI (426) wifi_init: tcp rx win: 5760[0m
+[0;32mI (426) wifi_init: tcp mss: 1440[0m
+[0;32mI (436) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (436) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (436) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (496) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (496) wifi:enable tsf[0m
+[0;32mI (496) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (516) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (516) APP_MAIN: Received data: accle=0, bat=964, roll=2616[0m
+[0;32mI (626) APP_MAIN: Received data: accle=-1, bat=980, roll=2608[0m
+[0;32mI (726) APP_MAIN: Received data: accle=0, bat=933, roll=2432[0m
+[0;32mI (826) APP_MAIN: Received data: accle=-1, bat=986, roll=2624[0m
+[0;32mI (926) APP_MAIN: Received data: accle=0, bat=990, roll=2416[0m
+[0;32mI (1026) APP_MAIN: Received data: accle=-1, bat=977, roll=2568[0m
+[0;32mI (1126) APP_MAIN: Received data: accle=0, bat=868, roll=2384[0m
+[0;32mI (1226) APP_MAIN: Received data: accle=0, bat=808, roll=2112[0m
+[0;32mI (1326) APP_MAIN: Received data: accle=0, bat=997, roll=2920[0m
+[0;32mI (1426) APP_MAIN: Received data: accle=0, bat=836, roll=2584[0m
+[0;32mI (1526) APP_MAIN: Received data: accle=-1, bat=945, roll=2952[0m
+[0;32mI (1626) APP_MAIN: Received data: accle=-1, bat=953, roll=2728[0m
+[0;32mI (1726) APP_MAIN: Received data: accle=-1, bat=793, roll=2440[0m
+[0;32mI (1826) APP_MAIN: Received data: accle=-1, bat=971, roll=2416[0m
+[0;32mI (1926) APP_MAIN: Received data: accle=-1, bat=1008, roll=2728[0m
+[0;32mI (2026) APP_MAIN: Received data: accle=-1, bat=1014, roll=2824[0m
+[0;32mI (2126) APP_MAIN: Received data: accle=0, bat=959, roll=2544[0m
+[0;32mI (2226) APP_MAIN: Received data: accle=-1, bat=1006, roll=2856[0m
+[0;32mI (2326) APP_MAIN: Received data: accle=-1, bat=947, roll=3024[0m
+[0;32mI (2426) APP_MAIN: Received data: accle=-1, bat=1016, roll=2672[0m
+[0;32mI (2526) APP_MAIN: Received data: accle=-1, bat=857, roll=2328[0m
+[0;32mI (2626) APP_MAIN: Received data: accle=0, bat=990, roll=3016[0m
+[0;32mI (2726) APP_MAIN: Received data: accle=0, bat=829, roll=2232[0m
+[0;32mI (2826) APP_MAIN: Received data: accle=0, bat=1000, roll=2960[0m
+[0;32mI (2926) APP_MAIN: Received data: accle=0, bat=926, roll=2968[0m
+[0;32mI (3026) APP_MAIN: Received data: accle=0, bat=936, roll=2608[0m
+[0;32mI (3126) APP_MAIN: Received data: accle=0, bat=966, roll=2616[0m
+[0;32mI (3226) APP_MAIN: Received data: accle=-1, bat=943, roll=2560[0m
+[0;32mI (3326) APP_MAIN: Received data: accle=-1, bat=1011, roll=2840[0m
+[0;32mI (3426) APP_MAIN: Received data: accle=-1, bat=1008, roll=2784[0m
+[0;32mI (3526) APP_MAIN: Received data: accle=0, bat=937, roll=2464[0m
+[0;32mI (3626) APP_MAIN: Received data: accle=0, bat=831, roll=3208[0m
+[0;32mI (3726) APP_MAIN: Received data: accle=-1, bat=1008, roll=2800[0m
+[0;32mI (3826) APP_MAIN: Received data: accle=0, bat=896, roll=2560[0m
+[0;32mI (3926) APP_MAIN: Received data: accle=-1, bat=946, roll=2584[0m
+[0;32mI (4026) APP_MAIN: Received data: accle=0, bat=934, roll=2616[0m
+[0;32mI (4126) APP_MAIN: Received data: accle=0, bat=836, roll=3024[0m
+[0;32mI (4226) APP_MAIN: Received data: accle=-1, bat=907, roll=2440[0m
+[0;32mI (4326) APP_MAIN: Received data: accle=-1, bat=976, roll=2512[0m
+[0;32mI (4426) APP_MAIN: Received data: accle=0, bat=902, roll=2856[0m
+[0;32mI (4526) APP_MAIN: Received data: accle=-1, bat=1020, roll=2768[0m
+[0;32mI (4626) APP_MAIN: Received data: accle=0, bat=960, roll=2768[0m
+[0;32mI (4726) APP_MAIN: Received data: accle=0, bat=923, roll=2296[0m
+[0;32mI (4826) APP_MAIN: Received data: accle=0, bat=871, roll=2568[0m
+[0;32mI (4926) APP_MAIN: Received data: accle=-1, bat=848, roll=2496[0m
+[0;32mI (5026) APP_MAIN: Received data: accle=0, bat=988, roll=3072[0m
+[0;32mI (5126) APP_MAIN: Received data: accle=0, bat=991, roll=2776[0m
+[0;32mI (5226) APP_MAIN: Received data: accle=0, bat=997, roll=2896[0m
+[0;32mI (5326) APP_MAIN: Received data: accle=-1, bat=1020, roll=2848[0m
+[0;32mI (5426) APP_MAIN: Received data: accle=0, bat=930, roll=2504[0m
+[0;32mI (5526) APP_MAIN: Received data: accle=0, bat=1000, roll=2872[0m
+[0;32mI (5626) APP_MAIN: Received data: accle=0, bat=898, roll=2432[0m
+[0;32mI (5726) APP_MAIN: Received data: accle=0, bat=929, roll=2560[0m
+[0;32mI (5826) APP_MAIN: Received data: accle=-1, bat=913, roll=2336[0m
+[0;32mI (5926) APP_MAIN: Received data: accle=0, bat=990, roll=2688[0m
+[0;32mI (6026) APP_MAIN: Received data: accle=0, bat=992, roll=2576[0m
+[0;32mI (6126) APP_MAIN: Received data: accle=-1, bat=947, roll=2824[0m
+[0;32mI (6226) APP_MAIN: Received data: accle=-1, bat=950, roll=2624[0m
+[0;32mI (6326) APP_MAIN: Received data: accle=-1, bat=1006, roll=2504[0m
+[0;32mI (6426) APP_MAIN: Received data: accle=-1, bat=942, roll=2536[0m
+[0;32mI (6526) APP_MAIN: Received data: accle=0, bat=1001, roll=2600[0m
+[0;32mI (6626) APP_MAIN: Received data: accle=-1, bat=906, roll=3016[0m
+[0;32mI (6726) APP_MAIN: Received data: accle=0, bat=925, roll=2760[0m
+[0;32mI (6826) APP_MAIN: Received data: accle=0, bat=970, roll=2792[0m
+[0;32mI (6926) APP_MAIN: Received data: accle=-1, bat=977, roll=2712[0m
+[0;32mI (7026) APP_MAIN: Received data: accle=0, bat=1000, roll=2864[0m
+[0;32mI (7126) APP_MAIN: Received data: accle=-1, bat=943, roll=2976[0m
+[0;32mI (7226) APP_MAIN: Received data: accle=-1, bat=1016, roll=2640[0m
+[0;32mI (7326) APP_MAIN: Received data: accle=0, bat=932, roll=2640[0m
+[0;32mI (7426) APP_MAIN: Received data: accle=0, bat=871, roll=3080[0m
+[0;32mI (7526) APP_MAIN: Received data: accle=-1, bat=819, roll=2224[0m
+[0;32mI (7626) APP_MAIN: Received data: accle=-1, bat=827, roll=2232[0m
+[0;32mI (7726) APP_MAIN: Received data: accle=-1, bat=973, roll=2960[0m
+[0;32mI (7826) APP_MAIN: Received data: accle=0, bat=1001, roll=2664[0m
+[0;32mI (7926) APP_MAIN: Received data: accle=-1, bat=874, roll=3032[0m
+[0;32mI (8026) APP_MAIN: Received data: accle=-1, bat=882, roll=2504[0m
+[0;32mI (8126) APP_MAIN: Received data: accle=-1, bat=978, roll=2784[0m
+[0;32mI (8226) APP_MAIN: Received data: accle=-1, bat=972, roll=2488[0m
+[0;32mI (8326) APP_MAIN: Received data: accle=0, bat=934, roll=2528[0m
+[0;32mI (8426) APP_MAIN: Received data: accle=0, bat=960, roll=2832[0m
+[0;32mI (8526) APP_MAIN: Received data: accle=0, bat=955, roll=2904[0m
+[0;32mI (8626) APP_MAIN: Received data: accle=0, bat=904, roll=2504[0m
+[0;32mI (8726) APP_MAIN: Received data: accle=-1, bat=921, roll=2472[0m
+[0;32mI (8826) APP_MAIN: Received data: accle=0, bat=994, roll=2600[0m
+[0;32mI (8926) APP_MAIN: Received data: accle=-1, bat=940, roll=2784[0m
+[0;32mI (9026) APP_MAIN: Received data: accle=-1, bat=920, roll=2504[0m
+[0;32mI (9126) APP_MAIN: Received data: accle=0, bat=960, roll=2568[0m
+[0;32mI (9226) APP_MAIN: Received data: accle=0, bat=812, roll=2136[0m
+[0;32mI (9326) APP_MAIN: Received data: accle=0, bat=995, roll=2608[0m
+[0;32mI (9426) APP_MAIN: Received data: accle=0, bat=1001, roll=2656[0m
+[0;32mI (9526) APP_MAIN: Received data: accle=-1, bat=1010, roll=2640[0m
+[0;32mI (9626) APP_MAIN: Received data: accle=-1, bat=908, roll=2536[0m
+[0;32mI (9726) APP_MAIN: Received data: accle=0, bat=956, roll=2752[0m
+[0;32mI (9826) APP_MAIN: Received data: accle=-1, bat=982, roll=2528[0m
+[0;32mI (9926) APP_MAIN: Received data: accle=-1, bat=909, roll=2496[0m
+[0;32mI (10026) APP_MAIN: Received data: accle=0, bat=1005, roll=2808[0m
+[0;32mI (10126) APP_MAIN: Received data: accle=-1, bat=916, roll=2472[0m
+[0;32mI (10226) APP_MAIN: Received data: accle=0, bat=891, roll=2544[0m
+[0;32mI (10326) APP_MAIN: Received data: accle=-1, bat=920, roll=2440[0m
+[0;32mI (10426) APP_MAIN: Received data: accle=0, bat=840, roll=2352[0m
+[0;32mI (10526) APP_MAIN: Received data: accle=-1, bat=1016, roll=2704[0m
+[0;32mI (10626) APP_MAIN: Received data: accle=-1, bat=986, roll=2912[0m
+[0;32mI (10726) APP_MAIN: Received data: accle=-1, bat=824, roll=2392[0m
+[0;32mI (10826) APP_MAIN: Received data: accle=0, bat=1004, roll=2720[0m
+[0;32mI (10926) APP_MAIN: Received data: accle=0, bat=1004, roll=2640[0m
+[0;32mI (11026) APP_MAIN: Received data: accle=-1, bat=1011, roll=2816[0m
+[0;32mI (11126) APP_MAIN: Received data: accle=-1, bat=1014, roll=2792[0m
+[0;32mI (11226) APP_MAIN: Received data: accle=-1, bat=918, roll=2680[0m
+[0;32mI (11326) APP_MAIN: Received data: accle=-1, bat=948, roll=2560[0m
+[0;32mI (11426) APP_MAIN: Received data: accle=-1, bat=886, roll=2336[0m
+[0;32mI (11526) APP_MAIN: Received data: accle=-1, bat=1019, roll=2664[0m
+[0;32mI (11626) APP_MAIN: Received data: accle=-1, bat=911, roll=2856[0m
+[0;32mI (11726) APP_MAIN: Received data: accle=-1, bat=1019, roll=2728[0m
+[0;32mI (11826) APP_MAIN: Received data: accle=-1, bat=971, roll=2856[0m
+[0;32mI (11926) APP_MAIN: Received data: accle=-1, bat=1020, roll=2744[0m
+[0;32mI (12026) APP_MAIN: Received data: accle=-1, bat=1017, roll=2944[0m
+[0;32mI (12126) APP_MAIN: Received data: accle=-1, bat=943, roll=2672[0m
+[0;32mI (12226) APP_MAIN: Received data: accle=-1, bat=972, roll=2776[0m
+[0;32mI (12326) APP_MAIN: Received data: accle=0, bat=1002, roll=2768[0m
+[0;32mI (12426) APP_MAIN: Received data: accle=-1, bat=1019, roll=2608[0m
+[0;32mI (12526) APP_MAIN: Received data: accle=0, bat=922, roll=2640[0m
+[0;32mI (12626) APP_MAIN: Received data: accle=0, bat=1004, roll=2704[0m
+[0;32mI (12726) APP_MAIN: Received data: accle=-1, bat=1019, roll=2616[0m
+[0;32mI (12826) APP_MAIN: Received data: accle=0, bat=935, roll=2480[0m
+[0;32mI (12926) APP_MAIN: Received data: accle=-1, bat=906, roll=2496[0m
+[0;32mI (13026) APP_MAIN: Received data: accle=0, bat=937, roll=2968[0m
+[0;32mI (13126) APP_MAIN: Received data: accle=0, bat=959, roll=2424[0m
+[0;32mI (13226) APP_MAIN: Received data: accle=0, bat=970, roll=2832[0m
+[0;32mI (13326) APP_MAIN: Received data: accle=-1, bat=1010, roll=2600[0m
+[0;32mI (13426) APP_MAIN: Received data: accle=-1, bat=977, roll=2688[0m
+[0;32mI (13526) APP_MAIN: Received data: accle=-1, bat=880, roll=3112[0m
+[0;32mI (13626) APP_MAIN: Received data: accle=0, bat=968, roll=2560[0m
+[0;32mI (13726) APP_MAIN: Received data: accle=0, bat=959, roll=2536[0m
+[0;32mI (13826) APP_MAIN: Received data: accle=0, bat=933, roll=2912[0m
+[0;32mI (13926) APP_MAIN: Received data: accle=-1, bat=979, roll=3000[0m
+[0;32mI (14026) APP_MAIN: Received data: accle=0, bat=988, roll=2744[0m
+[0;32mI (14126) APP_MAIN: Received data: accle=-1, bat=921, roll=2336[0m
+[0;32mI (14226) APP_MAIN: Received data: accle=0, bat=868, roll=3176[0m
+[0;32mI (14326) APP_MAIN: Received data: accle=0, bat=936, roll=2440[0m
+[0;32mI (14426) APP_MAIN: Received data: accle=0, bat=871, roll=2296[0m
+[0;32mI (14526) APP_MAIN: Received data: accle=-1, bat=939, roll=2616[0m
+[0;32mI (14626) APP_MAIN: Received data: accle=0, bat=898, roll=2376[0m
+[0;32mI (14726) APP_MAIN: Received data: accle=-1, bat=1016, roll=2536[0m
+[0;32mI (14826) APP_MAIN: Received data: accle=-1, bat=943, roll=2888[0m
+[0;32mI (14926) APP_MAIN: Received data: accle=-1, bat=919, roll=2616[0m
+[0;32mI (15026) APP_MAIN: Received data: accle=-1, bat=858, roll=2944[0m
+[0;32mI (15126) APP_MAIN: Received data: accle=-1, bat=977, roll=2720[0m
+[0;32mI (15226) APP_MAIN: Received data: accle=-1, bat=943, roll=2864[0m
+[0;32mI (15326) APP_MAIN: Received data: accle=-1, bat=907, roll=2456[0m
+[0;32mI (15426) APP_MAIN: Received data: accle=0, bat=935, roll=2648[0m
+[0;32mI (15526) APP_MAIN: Received data: accle=0, bat=1002, roll=2736[0m
+[0;32mI (15626) APP_MAIN: Received data: accle=-1, bat=971, roll=2728[0m
+[0;32mI (15726) APP_MAIN: Received data: accle=-1, bat=1008, roll=2832[0m
+[0;32mI (15826) APP_MAIN: Received data: accle=-1, bat=977, roll=2760[0m
+[0;32mI (15926) APP_MAIN: Received data: accle=0, bat=968, roll=2720[0m
+[0;32mI (16026) APP_MAIN: Received data: accle=0, bat=750, roll=2088[0m
+[0;32mI (16126) APP_MAIN: Received data: accle=-1, bat=1017, roll=2904[0m
+[0;32mI (16226) APP_MAIN: Received data: accle=-1, bat=914, roll=2488[0m
+[0;32mI (16326) APP_MAIN: Received data: accle=0, bat=831, roll=2392[0m
+[0;32mI (16426) APP_MAIN: Received data: accle=-1, bat=853, roll=2456[0m
+[0;32mI (16526) APP_MAIN: Received data: accle=-1, bat=942, roll=2624[0m
+[0;32mI (16626) APP_MAIN: Received data: accle=-1, bat=1014, roll=2872[0m
+[0;32mI (16726) APP_MAIN: Received data: accle=-1, bat=858, roll=2208[0m
+[0;32mI (16826) APP_MAIN: Received data: accle=-1, bat=858, roll=2472[0m
+[0;32mI (16926) APP_MAIN: Received data: accle=0, bat=958, roll=2792[0m
+[0;32mI (17026) APP_MAIN: Received data: accle=0, bat=931, roll=2360[0m
+[0;32mI (17126) APP_MAIN: Received data: accle=-1, bat=1020, roll=2904[0m
+[0;32mI (17226) APP_MAIN: Received data: accle=-1, bat=1007, roll=2576[0m
+[0;32mI (17326) APP_MAIN: Received data: accle=-1, bat=1010, roll=2624[0m
+[0;32mI (17426) APP_MAIN: Received data: accle=0, bat=1000, roll=2880[0m
+[0;32mI (17526) APP_MAIN: Received data: accle=0, bat=990, roll=2672[0m
+[0;32mI (17626) APP_MAIN: Received data: accle=0, bat=993, roll=2664[0m
+[0;32mI (17726) APP_MAIN: Received data: accle=-1, bat=888, roll=2424[0m
+[0;32mI (17826) APP_MAIN: Received data: accle=-1, bat=1017, roll=2864[0m
+[0;32mI (17926) APP_MAIN: Received data: accle=0, bat=959, roll=2672[0m
+[0;32mI (18026) APP_MAIN: Received data: accle=0, bat=991, roll=2536[0m
+[0;32mI (18126) APP_MAIN: Received data: accle=-1, bat=974, roll=2712[0m
+[0;32mI (18226) APP_MAIN: Received data: accle=-1, bat=914, roll=2432[0m
+[0;32mI (18326) APP_MAIN: Received data: accle=-1, bat=877, roll=2272[0m
+[0;32mI (18426) APP_MAIN: Received data: accle=-1, bat=882, roll=2568[0m
+[0;32mI (18526) APP_MAIN: Received data: accle=-1, bat=847, roll=2200[0m
+[0;32mI (18626) APP_MAIN: Received data: accle=0, bat=864, roll=2264[0m
+[0;32mI (18726) APP_MAIN: Received data: accle=0, bat=1000, roll=2544[0m
+[0;32mI (18826) APP_MAIN: Received data: accle=0, bat=900, roll=2472[0m
+[0;32mI (18926) APP_MAIN: Received data: accle=0, bat=1023, roll=2880[0m
+[0;32mI (19026) APP_MAIN: Received data: accle=-1, bat=950, roll=2736[0m
+[0;32mI (19126) APP_MAIN: Received data: accle=-1, bat=1020, roll=2776[0m
+[0;32mI (19226) APP_MAIN: Received data: accle=-1, bat=973, roll=2504[0m
+[0;32mI (19326) APP_MAIN: Received data: accle=0, bat=991, roll=2536[0m
+[0;32mI (19426) APP_MAIN: Received data: accle=0, bat=871, roll=2864[0m
+[0;32mI (19526) APP_MAIN: Received data: accle=0, bat=967, roll=2792[0m
+[0;32mI (19626) APP_MAIN: Received data: accle=-1, bat=1019, roll=2600[0m
+[0;32mI (19726) APP_MAIN: Received data: accle=-1, bat=888, roll=2736[0m
+[0;32mI (19826) APP_MAIN: Received data: accle=-1, bat=979, roll=2808[0m
+[0;32mI (19926) APP_MAIN: Received data: accle=0, bat=1023, roll=2856[0m
+[0;32mI (20026) APP_MAIN: Received data: accle=-1, bat=1013, roll=2624[0m
+[0;32mI (20126) APP_MAIN: Received data: accle=-1, bat=945, roll=2864[0m
+[0;32mI (20226) APP_MAIN: Received data: accle=0, bat=925, roll=2856[0m
+[0;32mI (20326) APP_MAIN: Received data: accle=-1, bat=910, roll=2464[0m
+[0;32mI (20426) APP_MAIN: Received data: accle=-1, bat=787, roll=2568[0m
+[0;32mI (20526) APP_MAIN: Received data: accle=-1, bat=973, roll=2792[0m
+[0;32mI (20626) APP_MAIN: Received data: accle=-1, bat=974, roll=2568[0m
+[0;32mI (20726) APP_MAIN: Received data: accle=0, bat=993, roll=2752[0m
+[0;32mI (20826) APP_MAIN: Received data: accle=-1, bat=882, roll=2312[0m
+[0;32mI (20926) APP_MAIN: Received data: accle=0, bat=830, roll=2344[0m
+[0;32mI (21026) APP_MAIN: Received data: accle=-1, bat=986, roll=2664[0m
+[0;32mI (21126) APP_MAIN: Received data: accle=-1, bat=950, roll=2832[0m
+[0;32mI (21226) APP_MAIN: Received data: accle=-1, bat=1014, roll=2776[0m
+[0;32mI (21326) APP_MAIN: Received data: accle=-1, bat=819, roll=2224[0m
+[0;32mI (21426) APP_MAIN: Received data: accle=0, bat=995, roll=2904[0m
+[0;32mI (21526) APP_MAIN: Received data: accle=-1, bat=972, roll=2608[0m
+[0;32mI (21626) APP_MAIN: Received data: accle=0, bat=1001, roll=2680[0m
+[0;32mI (21726) APP_MAIN: Received data: accle=-1, bat=942, roll=2544[0m
+[0;32mI (21826) APP_MAIN: Received data: accle=-1, bat=918, roll=2520[0m
+[0;32mI (21926) APP_MAIN: Received data: accle=0, bat=893, roll=2432[0m
+[0;32mI (22026) APP_MAIN: Received data: accle=-1, bat=920, roll=3024[0m
+[0;32mI (22126) APP_MAIN: Received data: accle=0, bat=956, roll=2648[0m
+[0;32mI (22226) APP_MAIN: Received data: accle=0, bat=903, roll=2672[0m
+[0;32mI (22326) APP_MAIN: Received data: accle=0, bat=996, roll=2416[0m
+[0;32mI (22426) APP_MAIN: Received data: accle=-1, bat=974, roll=2720[0m
+[0;32mI (22526) APP_MAIN: Received data: accle=0, bat=998, roll=2880[0m
+[0;32mI (22626) APP_MAIN: Received data: accle=0, bat=990, roll=2672[0m
+[0;32mI (22726) APP_MAIN: Received data: accle=-1, bat=975, roll=2744[0m
+[0;32mI (22826) APP_MAIN: Received data: accle=-1, bat=1008, roll=2760[0m
+[0;32mI (22926) APP_MAIN: Received data: accle=-1, bat=953, roll=2816[0m
+[0;32mI (23026) APP_MAIN: Received data: accle=-1, bat=1011, roll=2704[0m
+[0;32mI (23126) APP_MAIN: Received data: accle=-1, bat=1017, roll=2760[0m
+[0;32mI (23226) APP_MAIN: Received data: accle=0, bat=927, roll=2584[0m
+[0;32mI (23326) APP_MAIN: Received data: accle=-1, bat=1013, roll=2624[0m
+[0;32mI (23426) APP_MAIN: Received data: accle=0, bat=1002, roll=2776[0m
+[0;32mI (23526) APP_MAIN: Received data: accle=0, bat=1001, roll=2656[0m
+[0;32mI (23626) APP_MAIN: Received data: accle=0, bat=893, roll=2544[0m
+[0;32mI (23726) APP_MAIN: Received data: accle=-1, bat=938, roll=2584[0m
+[0;32mI (23826) APP_MAIN: Received data: accle=-1, bat=981, roll=2480[0m
+[0;32mI (23926) APP_MAIN: Received data: accle=-1, bat=883, roll=2328[0m
+[0;32mI (24026) APP_MAIN: Received data: accle=-1, bat=879, roll=2456[0m
+[0;32mI (24126) APP_MAIN: Received data: accle=-1, bat=980, roll=2560[0m
+[0;32mI (24226) APP_MAIN: Received data: accle=0, bat=927, roll=2992[0m
+[0;32mI (24326) APP_MAIN: Received data: accle=-1, bat=978, roll=2296[0m
+[0;32mI (24426) APP_MAIN: Received data: accle=0, bat=968, roll=2704[0m
+[0;32mI (24526) APP_MAIN: Received data: accle=0, bat=904, roll=2504[0m
+[0;32mI (24626) APP_MAIN: Received data: accle=0, bat=1001, roll=2728[0m
+[0;32mI (24726) APP_MAIN: Received data: accle=-1, bat=945, roll=2344[0m
+[0;32mI (24826) APP_MAIN: Received data: accle=0, bat=1004, roll=2632[0m
+[0;32mI (24926) APP_MAIN: Received data: accle=0, bat=990, roll=2720[0m
+[0;32mI (25026) APP_MAIN: Received data: accle=0, bat=1003, roll=2544[0m
+[0;32mI (25126) APP_MAIN: Received data: accle=0, bat=868, roll=2376[0m
+[0;32mI (25226) APP_MAIN: Received data: accle=0, bat=864, roll=2480[0m
+[0;32mI (25326) APP_MAIN: Received data: accle=0, bat=935, roll=2712[0m
+[0;32mI (25426) APP_MAIN: Received data: accle=0, bat=924, roll=2544[0m
+[0;32mI (25526) APP_MAIN: Received data: accle=-1, bat=973, roll=2672[0m
+[0;32mI (25626) APP_MAIN: Received data: accle=0, bat=863, roll=3024[0m
+[0;32mI (25726) APP_MAIN: Received data: accle=0, bat=954, roll=2864[0m
+[0;32mI (25826) APP_MAIN: Received data: accle=0, bat=1005, roll=2792[0m
+[0;32mI (25926) APP_MAIN: Received data: accle=-1, bat=940, roll=2992[0m
+[0;32mI (26026) APP_MAIN: Received data: accle=-1, bat=1008, roll=2768[0m
+[0;32mI (26126) APP_MAIN: Received data: accle=-1, bat=1011, roll=2792[0m
+[0;32mI (26226) APP_MAIN: Received data: accle=-1, bat=791, roll=2376[0m
+[0;32mI (26326) APP_MAIN: Received data: accle=0, bat=991, roll=2808[0m
+[0;32mI (26426) APP_MAIN: Received data: accle=0, bat=968, roll=2560[0m
+[0;32mI (26526) APP_MAIN: Received data: accle=0, bat=865, roll=2240[0m
+[0;32mI (26626) APP_MAIN: Received data: accle=0, bat=1002, roll=2784[0m
+[0;32mI (26726) APP_MAIN: Received data: accle=0, bat=962, roll=2544[0m
+[0;32mI (26826) APP_MAIN: Received data: accle=-1, bat=977, roll=2240[0m
+[0;32mI (26926) APP_MAIN: Received data: accle=0, bat=956, roll=2656[0m
+[0;32mI (27026) APP_MAIN: Received data: accle=-1, bat=979, roll=2728[0m
+[0;32mI (27126) APP_MAIN: Received data: accle=0, bat=956, roll=2960[0m
+[0;32mI (27226) APP_MAIN: Received data: accle=0, bat=862, roll=2448[0m
+[0;32mI (27326) APP_MAIN: Received data: accle=0, bat=1023, roll=2888[0m
+[0;32mI (27426) APP_MAIN: Received data: accle=0, bat=933, roll=2920[0m
+[0;32mI (27526) APP_MAIN: Received data: accle=0, bat=935, roll=2560[0m
+[0;32mI (27626) APP_MAIN: Received data: accle=-1, bat=1008, roll=2712[0m
+[0;32mI (27726) APP_MAIN: Received data: accle=0, bat=991, roll=2496[0m
+[0;32mI (27826) APP_MAIN: Received data: accle=-1, bat=975, roll=2488[0m
+[0;32mI (27926) APP_MAIN: Received data: accle=-1, bat=942, roll=2864[0m
+[0;32mI (28026) APP_MAIN: Received data: accle=0, bat=930, roll=2504[0m
+[0;32mI (28126) APP_MAIN: Received data: accle=-1, bat=1013, roll=2696[0m
+[0;32mI (28226) APP_MAIN: Received data: accle=-1, bat=1017, roll=2824[0m
+[0;32mI (28326) APP_MAIN: Received data: accle=0, bat=868, roll=2248[0m
+[0;32mI (28426) APP_MAIN: Received data: accle=-1, bat=947, roll=2592[0m
+[0;32mI (28526) APP_MAIN: Received data: accle=0, bat=997, roll=2552[0m
+[0;32mI (28626) APP_MAIN: Received data: accle=-1, bat=980, roll=2912[0m
+[0;32mI (28726) APP_MAIN: Received data: accle=0, bat=1005, roll=2768[0m
+[0;32mI (28826) APP_MAIN: Received data: accle=0, bat=997, roll=2592[0m
+[0;32mI (28926) APP_MAIN: Received data: accle=-1, bat=1006, roll=3064[0m
+[0;32mI (29026) APP_MAIN: Received data: accle=0, bat=76, roll=336[0m
+[0;32mI (29126) APP_MAIN: Received data: accle=-1, bat=639, roll=2512[0m
+[0;32mI (29226) APP_MAIN: Received data: accle=0, bat=873, roll=2576[0m
+[0;32mI (29326) APP_MAIN: Received data: accle=0, bat=379, roll=-1040[0m
+[0;32mI (29426) APP_MAIN: Received data: accle=-1, bat=637, roll=4008[0m
+[0;32mI (29526) APP_MAIN: Received data: accle=0, bat=221, roll=8416[0m
+[0;32mI (29626) APP_MAIN: Received data: accle=-1, bat=411, roll=-13024[0m
+[0;32mI (29726) APP_MAIN: Received data: accle=0, bat=279, roll=4408[0m
+[0;32mI (29826) APP_MAIN: Received data: accle=-1, bat=29, roll=496[0m
+[0;32mI (29926) APP_MAIN: Received data: accle=-1, bat=247, roll=-7208[0m
+[0;32mI (30026) APP_MAIN: Received data: accle=-1, bat=89, roll=-2528[0m
+[0;32mI (30126) APP_MAIN: Received data: accle=0, bat=298, roll=-8600[0m
+[0;32mI (30226) APP_MAIN: Received data: accle=-1, bat=517, roll=-12200[0m
+[0;32mI (30326) APP_MAIN: Received data: accle=0, bat=415, roll=-10528[0m
+[0;32mI (30426) APP_MAIN: Received data: accle=0, bat=442, roll=-10944[0m
+[0;32mI (30526) APP_MAIN: Received data: accle=-1, bat=708, roll=-14232[0m
+[0;32mI (30626) APP_MAIN: Received data: accle=-1, bat=517, roll=-12080[0m
+[0;32mI (30726) APP_MAIN: Received data: accle=-1, bat=590, roll=-13104[0m
+[0;32mI (30826) APP_MAIN: Received data: accle=-1, bat=496, roll=-11688[0m
+[0;32mI (30926) APP_MAIN: Received data: accle=-1, bat=609, roll=-13648[0m
+[0;32mI (31026) APP_MAIN: Received data: accle=0, bat=774, roll=-19664[0m
+[0;32mI (31126) APP_MAIN: Received data: accle=-1, bat=939, roll=-17464[0m
+[0;32mI (31226) APP_MAIN: Received data: accle=0, bat=842, roll=-16088[0m
+[0;32mI (31326) APP_MAIN: Received data: accle=-1, bat=712, roll=-20880[0m
+[0;32mI (31426) APP_MAIN: Received data: accle=0, bat=809, roll=-19912[0m
+[0;32mI (31526) APP_MAIN: Received data: accle=-1, bat=761, roll=-20560[0m
+[0;32mI (31626) APP_MAIN: Received data: accle=-1, bat=683, roll=-21168[0m
+[0;32mI (31726) APP_MAIN: Received data: accle=0, bat=436, roll=-10968[0m
+[0;32mI (31826) APP_MAIN: Received data: accle=-1, bat=251, roll=-7424[0m
+[0;32mI (31926) APP_MAIN: Received data: accle=-1, bat=251, roll=-7792[0m
+[0;32mI (32026) APP_MAIN: Received data: accle=-1, bat=192, roll=-5848[0m
+[0;32mI (32126) APP_MAIN: Received data: accle=0, bat=167, roll=2544[0m
+[0;32mI (32226) APP_MAIN: Received data: accle=0, bat=359, roll=-6376[0m
+[0;32mI (32326) APP_MAIN: Received data: accle=-1, bat=769, roll=-20160[0m
+[0;32mI (32426) APP_MAIN: Received data: accle=-1, bat=1008, roll=6480[0m
+[0;32mI (32526) APP_MAIN: Received data: accle=-1, bat=405, roll=2664[0m
+[0;32mI (32626) APP_MAIN: Received data: accle=0, bat=134, roll=1856[0m
+[0;32mI (32726) APP_MAIN: Received data: accle=0, bat=73, roll=1368[0m
+[0;32mI (32826) APP_MAIN: Received data: accle=-1, bat=143, roll=-4376[0m
+[0;32mI (32926) APP_MAIN: Received data: accle=0, bat=571, roll=-14616[0m
+[0;32mI (33026) APP_MAIN: Received data: accle=0, bat=894, roll=-17224[0m
+[0;32mI (33126) APP_MAIN: Received data: accle=-1, bat=1006, roll=-17592[0m
+[0;32mI (33226) APP_MAIN: Received data: accle=0, bat=894, roll=-19088[0m
+[0;32mI (33326) APP_MAIN: Received data: accle=0, bat=675, roll=-21344[0m
+[0;32mI (33426) APP_MAIN: Received data: accle=0, bat=778, roll=-20752[0m
+[0;32mI (33526) APP_MAIN: Received data: accle=-1, bat=663, roll=-22072[0m
+[0;32mI (33626) APP_MAIN: Received data: accle=0, bat=458, roll=-25088[0m
+[0;32mI (33726) APP_MAIN: Received data: accle=0, bat=275, roll=-29768[0m
+[0;32mI (33826) APP_MAIN: Received data: accle=0, bat=187, roll=31424[0m
+[0;32mI (33926) APP_MAIN: Received data: accle=0, bat=72, roll=27560[0m
+[0;32mI (34026) APP_MAIN: Received data: accle=-1, bat=306, roll=26136[0m
+[0;32mI (34126) APP_MAIN: Received data: accle=0, bat=128, roll=21096[0m
+[0;32mI (34226) APP_MAIN: Received data: accle=-1, bat=81, roll=20728[0m
+[0;32mI (34326) APP_MAIN: Received data: accle=-1, bat=99, roll=19224[0m
+[0;32mI (34426) APP_MAIN: Received data: accle=0, bat=60, roll=16984[0m
+[0;32mI (34526) APP_MAIN: Received data: accle=-1, bat=53, roll=17472[0m
+[0;32mI (34626) APP_MAIN: Received data: accle=-1, bat=63, roll=15944[0m
+[0;32mI (34726) APP_MAIN: Received data: accle=-1, bat=85, roll=16280[0m
+[0;32mI (34826) APP_MAIN: Received data: accle=-1, bat=31, roll=13944[0m
+[0;32mI (34926) APP_MAIN: Received data: accle=-1, bat=86, roll=11656[0m
+[0;32mI (35026) APP_MAIN: Received data: accle=-1, bat=210, roll=6896[0m
+[0;32mI (35126) APP_MAIN: Received data: accle=0, bat=275, roll=2256[0m
+[0;32mI (35226) APP_MAIN: Received data: accle=0, bat=242, roll=-1720[0m
+[0;32mI (35326) APP_MAIN: Received data: accle=-1, bat=50, roll=-17432[0m
+[0;32mI (35426) APP_MAIN: Received data: accle=0, bat=181, roll=-20088[0m
+[0;32mI (35526) APP_MAIN: Received data: accle=0, bat=237, roll=-24552[0m
+[0;32mI (35626) APP_MAIN: Received data: accle=-1, bat=369, roll=29968[0m
+[0;32mI (35726) APP_MAIN: Received data: accle=-1, bat=681, roll=23272[0m
+[0;32mI (35826) APP_MAIN: Received data: accle=0, bat=418, roll=28472[0m
+[0;32mI (35926) APP_MAIN: Received data: accle=0, bat=333, roll=-32600[0m
+[0;32mI (36026) APP_MAIN: Received data: accle=-1, bat=246, roll=-26000[0m
+[0;32mI (36126) APP_MAIN: Received data: accle=0, bat=239, roll=-13648[0m
+[0;32mI (36226) APP_MAIN: Received data: accle=-1, bat=106, roll=-5608[0m
+[0;32mI (36326) APP_MAIN: Received data: accle=0, bat=26, roll=-5792[0m
+[0;32mI (36426) APP_MAIN: Received data: accle=-1, bat=471, roll=-472[0m
+[0;32mI (36526) APP_MAIN: Received data: accle=0, bat=414, roll=-2368[0m
+[0;32mI (36626) APP_MAIN: Received data: accle=0, bat=223, roll=2744[0m
+[0;32mI (36726) APP_MAIN: Received data: accle=0, bat=134, roll=3776[0m
+[0;32mI (36826) APP_MAIN: Received data: accle=0, bat=221, roll=4872[0m
+[0;32mI (36926) APP_MAIN: Received data: accle=-1, bat=33, roll=7632[0m
+[0;32mI (37026) APP_MAIN: Received data: accle=0, bat=41, roll=9216[0m
+[0;32mI (37126) APP_MAIN: Received data: accle=-1, bat=155, roll=9304[0m
+[0;32mI (37226) APP_MAIN: Received data: accle=0, bat=73, roll=15800[0m
+[0;32mI (37326) APP_MAIN: Received data: accle=-1, bat=255, roll=27400[0m
+[0;32mI (37426) APP_MAIN: Received data: accle=0, bat=998, roll=-16504[0m
+[0;32mI (37526) APP_MAIN: Received data: accle=0, bat=461, roll=-11760[0m
+[0;32mI (37626) APP_MAIN: Received data: accle=-1, bat=85, roll=-1552[0m
+[0;32mI (37726) APP_MAIN: Received data: accle=0, bat=619, roll=4176[0m
+[0;32mI (37826) APP_MAIN: Received data: accle=-1, bat=215, roll=1560[0m
+[0;32mI (37926) APP_MAIN: Received data: accle=0, bat=481, roll=6792[0m
+[0;32mI (38026) APP_MAIN: Received data: accle=0, bat=967, roll=3712[0m
+[0;32mI (38126) APP_MAIN: Received data: accle=0, bat=925, roll=2360[0m
+[0;32mI (38226) APP_MAIN: Received data: accle=-1, bat=1008, roll=2840[0m
+[0;32mI (38326) APP_MAIN: Received data: accle=-1, bat=1013, roll=2552[0m
+[0;32mI (38426) APP_MAIN: Received data: accle=0, bat=1004, roll=2616[0m
+[0;32mI (38526) APP_MAIN: Received data: accle=-1, bat=912, roll=2584[0m
+[0;32mI (38626) APP_MAIN: Received data: accle=-1, bat=907, roll=2456[0m
+[0;32mI (38726) APP_MAIN: Received data: accle=-1, bat=791, roll=2328[0m
+[0;32mI (38826) APP_MAIN: Received data: accle=0, bat=834, roll=2272[0m
+[0;32mI (38926) APP_MAIN: Received data: accle=-1, bat=1007, roll=2720[0m
+[0;32mI (39026) APP_MAIN: Received data: accle=0, bat=1023, roll=2504[0m
+[0;32mI (39126) APP_MAIN: Received data: accle=-1, bat=943, roll=2896[0m
+[0;32mI (39226) APP_MAIN: Received data: accle=-1, bat=1014, roll=2808[0m
+[0;32mI (39326) APP_MAIN: Received data: accle=0, bat=896, roll=2584[0m
+[0;32mI (39426) APP_MAIN: Received data: accle=-1, bat=947, roll=2416[0m
+[0;32mI (39526) APP_MAIN: Received data: accle=-1, bat=974, roll=2552[0m
+[0;32mI (39626) APP_MAIN: Received data: accle=-1, bat=974, roll=2560[0m
+[0;32mI (39726) APP_MAIN: Received data: accle=-1, bat=921, roll=2672[0m
+[0;32mI (39826) APP_MAIN: Received data: accle=0, bat=832, roll=2832[0m
+[0;32mI (39926) APP_MAIN: Received data: accle=-1, bat=945, roll=2864[0m
+[0;32mI (40026) APP_MAIN: Received data: accle=-1, bat=982, roll=2520[0m
+[0;32mI (40126) APP_MAIN: Received data: accle=0, bat=959, roll=2432[0m
+[0;32mI (40226) APP_MAIN: Received data: accle=-1, bat=1008, roll=2776[0m
+[0;32mI (40326) APP_MAIN: Received data: accle=-1, bat=973, roll=2504[0m
+[0;32mI (40426) APP_MAIN: Received data: accle=0, bat=928, roll=2608[0m
+[0;32mI (40526) APP_MAIN: Received data: accle=-1, bat=977, roll=2696[0m
+[0;32mI (40626) APP_MAIN: Received data: accle=0, bat=896, roll=2448[0m
+[0;32mI (40726) APP_MAIN: Received data: accle=-1, bat=950, roll=2832[0m
+[0;32mI (40826) APP_MAIN: Received data: accle=0, bat=998, roll=2728[0m
+[0;32mI (40926) APP_MAIN: Received data: accle=0, bat=898, roll=2960[0m
+[0;32mI (41026) APP_MAIN: Received data: accle=-1, bat=987, roll=2688[0m
+[0;32mI (41126) APP_MAIN: Received data: accle=-1, bat=1014, roll=2712[0m
+[0;32mI (41226) APP_MAIN: Received data: accle=-1, bat=949, roll=2680[0m
+[0;32mI (41326) APP_MAIN: Received data: accle=-1, bat=906, roll=2736[0m
+[0;32mI (41426) APP_MAIN: Received data: accle=0, bat=899, roll=2392[0m
+[0;32mI (41526) APP_MAIN: Received data: accle=-1, bat=1008, roll=2840[0m
+[0;32mI (41626) APP_MAIN: Received data: accle=0, bat=999, roll=2720[0m
+[0;32mI (41726) APP_MAIN: Received data: accle=-1, bat=974, roll=2704[0m
+[0;32mI (41826) APP_MAIN: Received data: accle=0, bat=873, roll=2856[0m
+[0;32mI (41926) APP_MAIN: Received data: accle=0, bat=867, roll=2792[0m
+[0;32mI (42026) APP_MAIN: Received data: accle=-1, bat=971, roll=2688[0m
+[0;32mI (42126) APP_MAIN: Received data: accle=0, bat=930, roll=2424[0m
+[0;32mI (42226) APP_MAIN: Received data: accle=0, bat=962, roll=2856[0m
+[0;32mI (42326) APP_MAIN: Received data: accle=0, bat=997, roll=2520[0m
+[0;32mI (42426) APP_MAIN: Received data: accle=-1, bat=1007, roll=2592[0m
+[0;32mI (42526) APP_MAIN: Received data: accle=-1, bat=913, roll=2472[0m
+[0;32mI (42626) APP_MAIN: Received data: accle=-1, bat=799, roll=2320[0m
+[0;32mI (42726) APP_MAIN: Received data: accle=0, bat=922, roll=2920[0m
+[0;32mI (42826) APP_MAIN: Received data: accle=-1, bat=951, roll=2632[0m
+[0;32mI (42926) APP_MAIN: Received data: accle=0, bat=839, roll=2200[0m
+[0;32mI (43026) APP_MAIN: Received data: accle=-1, bat=1013, roll=2728[0m
+[0;32mI (43126) APP_MAIN: Received data: accle=-1, bat=952, roll=2664[0m
+[0;32mI (43226) APP_MAIN: Received data: accle=0, bat=958, roll=2368[0m
+[0;32mI (43326) APP_MAIN: Received data: accle=-1, bat=974, roll=2568[0m
+[0;32mI (43426) APP_MAIN: Received data: accle=-1, bat=877, roll=2224[0m
+[0;32mI (43526) APP_MAIN: Received data: accle=0, bat=969, roll=2608[0m
+[0;32mI (43626) APP_MAIN: Received data: accle=0, bat=924, roll=2416[0m
+[0;32mI (43726) APP_MAIN: Received data: accle=0, bat=904, roll=2256[0m
+[0;32mI (43826) APP_MAIN: Received data: accle=0, bat=900, roll=2576[0m
+[0;32mI (43926) APP_MAIN: Received data: accle=0, bat=859, roll=2320[0m
+[0;32mI (44026) APP_MAIN: Received data: accle=-1, bat=981, roll=2624[0m
+[0;32mI (44126) APP_MAIN: Received data: accle=0, bat=1023, roll=2968[0m
+[0;32mI (44226) APP_MAIN: Received data: accle=0, bat=1000, roll=2440[0m
+[0;32mI (44326) APP_MAIN: Received data: accle=0, bat=992, roll=2624[0m
+[0;32mI (44426) APP_MAIN: Received data: accle=-1, bat=973, roll=2696[0m
+[0;32mI (44526) APP_MAIN: Received data: accle=-1, bat=910, roll=2328[0m
+[0;32mI (44626) APP_MAIN: Received data: accle=0, bat=997, roll=2872[0m
+[0;32mI (44726) APP_MAIN: Received data: accle=-1, bat=950, roll=2528[0m
+[0;32mI (44826) APP_MAIN: Received data: accle=-1, bat=947, roll=2816[0m
+[0;32mI (44926) APP_MAIN: Received data: accle=0, bat=809, roll=2096[0m
+[0;32mI (45026) APP_MAIN: Received data: accle=-1, bat=1013, roll=2616[0m
+[0;32mI (45126) APP_MAIN: Received data: accle=0, bat=992, roll=2600[0m
+[0;32mI (45226) APP_MAIN: Received data: accle=0, bat=935, roll=2792[0m
+[0;32mI (45326) APP_MAIN: Received data: accle=0, bat=997, roll=2608[0m
+[0;32mI (45426) APP_MAIN: Received data: accle=-1, bat=875, roll=3056[0m
+[0;32mI (45526) APP_MAIN: Received data: accle=0, bat=994, roll=2600[0m
+[0;32mI (45626) APP_MAIN: Received data: accle=0, bat=898, roll=2952[0m
+[0;32mI (45726) APP_MAIN: Received data: accle=-1, bat=950, roll=2840[0m
+[0;32mI (45826) APP_MAIN: Received data: accle=0, bat=905, roll=2528[0m
+[0;32mI (45926) APP_MAIN: Received data: accle=-1, bat=852, roll=2240[0m
+[0;32mI (46026) APP_MAIN: Received data: accle=0, bat=961, roll=2760[0m
+[0;32mI (46126) APP_MAIN: Received data: accle=-1, bat=1019, roll=2496[0m
+[0;32mI (46226) APP_MAIN: Received data: accle=-1, bat=912, roll=2448[0m
+[0;32mI (46326) APP_MAIN: Received data: accle=0, bat=803, roll=2232[0m
+[0;32mI (46426) APP_MAIN: Received data: accle=-1, bat=914, roll=2632[0m
+[0;32mI (46526) APP_MAIN: Received data: accle=-1, bat=987, roll=2648[0m
+[0;32mI (46626) APP_MAIN: Received data: accle=-1, bat=1020, roll=2736[0m
+[0;32mI (46726) APP_MAIN: Received data: accle=-1, bat=977, roll=2576[0m
+[0;32mI (46826) APP_MAIN: Received data: accle=-1, bat=1020, roll=2792[0m
+[0;32mI (46926) APP_MAIN: Received data: accle=0, bat=935, roll=2640[0m
+[0;32mI (47026) APP_MAIN: Received data: accle=0, bat=956, roll=2952[0m
+[0;32mI (47126) APP_MAIN: Received data: accle=0, bat=970, roll=2520[0m
+[0;32mI (47226) APP_MAIN: Received data: accle=-1, bat=1014, roll=2760[0m
+[0;32mI (47326) APP_MAIN: Received data: accle=0, bat=1003, roll=2528[0m
+[0;32mI (47426) APP_MAIN: Received data: accle=0, bat=924, roll=2480[0m
+[0;32mI (47526) APP_MAIN: Received data: accle=-1, bat=914, roll=2720[0m
+[0;32mI (47626) APP_MAIN: Received data: accle=-1, bat=944, roll=2392[0m
+[0;32mI (47726) APP_MAIN: Received data: accle=0, bat=958, roll=2488[0m
+[0;32mI (47826) APP_MAIN: Received data: accle=-1, bat=912, roll=2896[0m
+[0;32mI (47926) APP_MAIN: Received data: accle=-1, bat=1010, roll=2600[0m
+[0;32mI (48026) APP_MAIN: Received data: accle=-1, bat=1011, roll=2880[0m
+[0;32mI (48126) APP_MAIN: Received data: accle=0, bat=1000, roll=2600[0m
+[0;32mI (48226) APP_MAIN: Received data: accle=0, bat=960, roll=2472[0m
+[0;32mI (48326) APP_MAIN: Received data: accle=0, bat=780, roll=2264[0m
+[0;32mI (48426) APP_MAIN: Received data: accle=0, bat=926, roll=2752[0m
+[0;32mI (48526) APP_MAIN: Received data: accle=-1, bat=844, roll=2536[0m
+[0;32mI (48626) APP_MAIN: Received data: accle=-1, bat=978, roll=2640[0m
+[0;32mI (48726) APP_MAIN: Received data: accle=0, bat=843, roll=2296[0m
+[0;32mI (48826) APP_MAIN: Received data: accle=-1, bat=1016, roll=2632[0m
+[0;32mI (48926) APP_MAIN: Received data: accle=-1, bat=920, roll=3040[0m
+[0;32mI (49026) APP_MAIN: Received data: accle=-1, bat=1014, roll=2784[0m
+[0;32mI (49126) APP_MAIN: Received data: accle=-1, bat=912, roll=2824[0m
+[0;32mI (49226) APP_MAIN: Received data: accle=-1, bat=1019, roll=2632[0m

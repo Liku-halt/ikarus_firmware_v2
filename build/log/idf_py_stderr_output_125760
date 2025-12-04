@@ -1,0 +1,15 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4004c50e: [0;33muart_rx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x4200ac84: [0;33mregister_write[0m[0m at [0;32m/home/liku/esp/ikarus_firmware_v2/main/ikarus_firmware_v2.c[0m[0m:[1;31m304[0m
+[0m--- 0x403868c5: [0;33m_esp_error_check_failed[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0m

@@ -1,0 +1,240 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4004c51e: [0;33muart_rx_one_char[0m[0m in [0;32mROM[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/liku/esp/ikarus_firmware_v2/build/ikarus_firmware_v2.elf', '-ex', 'target remote | "/home/liku/.espressif/python_env/idf5.4_py3.11_env/bin/python" -m esp_idf_panic_decoder --target esp32c3 "/tmp/tmp2c_s5la3"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 138, in parse_idf_riscv_panic_output\n    raise ValueError("Couldn\'t parse panic handler output")\nValueError: Couldn\'t parse panic handler output\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/liku/esp/ikarus_firmware_v2/build/ikarus_firmware_v2.elf', '-ex', 'target remote | "/home/liku/.espressif/python_env/idf5.4_py3.11_env/bin/python" -m esp_idf_panic_decoder --target esp32c3 "/tmp/tmp47u6tcme"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 152, in parse_idf_riscv_panic_output\n    stack_base_addr, stack_data = get_stack_addr_and_data(res)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 120, in get_stack_addr_and_data\n    assert base_addr == prev_base_addr + bytes_in_line\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m.[0m[0;33m[0m
+[0m--- 0x40048b92: [0;33msoftware_reset_cpu[0m[0m in [0;32mROM[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/liku/esp/ikarus_firmware_v2/build/ikarus_firmware_v2.elf', '-ex', 'target remote | "/home/liku/.espressif/python_env/idf5.4_py3.11_env/bin/python" -m esp_idf_panic_decoder --target esp32c3 "/tmp/tmpvjxkj72k"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 138, in parse_idf_riscv_panic_output\n    raise ValueError("Couldn\'t parse panic handler output")\nValueError: Couldn\'t parse panic handler output\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/liku/esp/ikarus_firmware_v2/build/ikarus_firmware_v2.elf', '-ex', 'target remote | "/home/liku/.espressif/python_env/idf5.4_py3.11_env/bin/python" -m esp_idf_panic_decoder --target esp32c3 "/tmp/tmpq7togoe3"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 138, in parse_idf_riscv_panic_output\n    raise ValueError("Couldn\'t parse panic handler output")\nValueError: Couldn\'t parse panic handler output\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/liku/esp/ikarus_firmware_v2/build/ikarus_firmware_v2.elf', '-ex', 'target remote | "/home/liku/.espressif/python_env/idf5.4_py3.11_env/bin/python" -m esp_idf_panic_decoder --target esp32c3 "/tmp/tmpkxulu9t7"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 152, in parse_idf_riscv_panic_output\n    stack_base_addr, stack_data = get_stack_addr_and_data(res)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/liku/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 120, in get_stack_addr_and_data\n    assert base_addr == prev_base_addr + bytes_in_line\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4200610c: [0;33mpthread_cleanup_thread_specific_data_callback[0m[0m at [0;32m/home/liku/esp/esp-idf/components/pthread/pthread_local_storage.c[0m[0m:[1;31m126[0m
+[0m--- 0x42005896: [0;33mesp_cleanup_r[0m[0m at [0;32m/home/liku/esp/esp-idf/components/newlib/newlib_init.c[0m[0m:[1;31m43[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4038083c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m112[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40380884: [0;33mpanic_abort[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m468[0m
+[0m--- 0x403868d0: [0;33m__ubsan_include[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m

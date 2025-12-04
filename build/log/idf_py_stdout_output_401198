@@ -1,0 +1,1621 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c51a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (209) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (222) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (229) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (229) boot: Disabling RNG early entropy source...[0m
+[0;32mI (240) cpu_start: Unicore app[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (253) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (266) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (274) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (278) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (282) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (325) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (331) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+D (344) i2c.common: new bus(0) at 0x3fc9ecfc
+D (348) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (358) pp: pp rom version: 9387209[0m
+[0;32mI (359) net80211: net80211 rom version: 9387209[0m
+[0;32mI (362) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (370) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (371) wifi:wifi certification version: v7.0[0m
+[0;32mI (375) wifi:config NVS flash: enabled[0m
+[0;32mI (378) wifi:config nano formatting: disabled[0m
+[0;32mI (382) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (387) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (391) wifi:Init management short buffer num: 32[0m
+[0;32mI (396) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (400) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (404) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (408) wifi:Init static rx buffer num: 10[0m
+[0;32mI (412) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (416) wifi_init: rx ba win: 6[0m
+[0;32mI (418) wifi_init: accept mbox: 6[0m
+[0;32mI (421) wifi_init: tcpip mbox: 32[0m
+[0;32mI (424) wifi_init: udp mbox: 6[0m
+[0;32mI (427) wifi_init: tcp mbox: 6[0m
+[0;32mI (430) wifi_init: tcp tx win: 5760[0m
+[0;32mI (433) wifi_init: tcp rx win: 5760[0m
+[0;32mI (436) wifi_init: tcp mss: 1440[0m
+[0;32mI (439) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (443) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (447) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (488) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (487) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+I (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (488) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (488) wifi:enable tsf[0m
+[0;32mI (490) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (609) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (610) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (611) APP_MAIN: Timer created[0m
+[0;32mI (614) APP_MAIN: ISR callback registered[0m
+[0;32mI (618) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (622) APP_MAIN: Timer enabled[0m
+[0;32mI (624) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+I (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (485) wifi:enable tsf[0m
+[0;32mI (487) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (486) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (487) wifi:enable tsf[0m
+[0;32mI (489) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (607) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (609) APP_MAIN: Timer created[0m
+[0;32mI (612) APP_MAIN: ISR callback registered[0m
+[0;32mI (616) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (620) APP_MAIN: Timer enabled[0m
+[0;32mI (622) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (487) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (488) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (487) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (488) wifi:enable tsf[0m
+[0;32mI (490) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (608) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (609) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (610) APP_MAIN: Timer created[0m
+[0;32mI (613) APP_MAIN: ISR callback registered[0m
+[0;32mI (617) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (621) APP_MAIN: Timer enabled[0m
+[0;32mI (623) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (490) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (490) wifi:enable tsf[0m
+[0;32mI (492) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (611) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (612) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (613) APP_MAIN: Timer created[0m
+[0;32mI (616) APP_MAIN: ISR callback registered[0m
+[0;32mI (620) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (624) APP_MAIN: Timer enabled[0m
+[0;32mI (626) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+I (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (486) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (488) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (607) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (609) APP_MAIN: Timer created[0m
+[0;32mI (612) APP_MAIN: ISR callback registered[0m
+[0;32mI (616) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (620) APP_MAIN: Timer enabled[0m
+[0;32mI (622) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+I (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (488) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (486) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (488) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (606) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (608) APP_MAIN: Timer created[0m
+[0;32mI (611) APP_MAIN: ISR callback registered[0m
+[0;32mI (615) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (619) APP_MAIN: Timer enabled[0m
+[0;32mI (621) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+I (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (486) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (488) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (607) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) APP_MAIN: Initializing 1ms hardware timer...[0m
+[0;32mI (609) APP_MAIN: Timer created[0m
+[0;32mI (612) APP_MAIN: ISR callback registered[0m
+[0;32mI (616) APP_MAIN: Alarm configured for 1ms[0m
+[0;32mI (620) APP_MAIN: Timer enabled[0m
+[0;32mI (622) APP_MAIN: Timer started - running at EXACTLY 1ms intervals[0m
+
+FreeRTOS: FreeRTOS Task "control tasks" should not return, Aborting now!
+Core  0 register dump:
+MEPC    : 0x40380884  RA      : 0x403879a4  SP      : 0x3fcacdf0  GP      : 0x3fc94800  
+TP      : 0x3fcace20  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fc95000  S1      : 0x00000000  A0      : 0x3fc95708  A1      : 0x3c0a4537  
+A2      : 0x00000023  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x3fc9b000  
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+468	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x3fc95708 <msg> "") at /home/liku/esp/esp-idf/components/esp_system/panic.c:468
+#1  0x403879a4 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/liku/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:260
+
+
+
+ELF file SHA256: 861a0c3a2
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038083c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 12 2025 16:26:52[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (24) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a8c4h (108740) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0002a8ec vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d724 vaddr=40380000 size=028f4h ( 10484) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=93bcch (605132) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c3bf4 vaddr=403828f4 size=1168ch ( 71308) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d5288 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (228) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (228) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (248) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (256) app_init: Compile time:     Nov 12 2025 16:26:55[0m
+[0;32mI (261) app_init: ELF file SHA256:  861a0c3a2...[0m
+[0;32mI (265) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (270) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (273) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (277) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FC9B260 len 00024DA0 (147 KiB): RAM[0m
+[0;32mI (293) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (299) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (305) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (324) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+D (343) i2c.common: new bus(0) at 0x3fc9ecfc
+D (347) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (357) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+[0;32mI (361) wifi:wifi driver task: 3fca3db4, prio:23, stack:6656, core=0[0m
+[0;32mI (369) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (370) wifi:wifi certification version: v7.0[0m
+[0;32mI (374) wifi:config NVS flash: enabled[0m
+[0;32mI (377) wifi:config nano formatting: disabled[0m
+[0;32mI (381) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (386) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (390) wifi:Init management short buffer num: 32[0m
+[0;32mI (395) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (399) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (403) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (407) wifi:Init static rx buffer num: 10[0m
+[0;32mI (411) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (415) wifi_init: rx ba win: 6[0m
+[0;32mI (417) wifi_init: accept mbox: 6[0m
+[0;32mI (420) wifi_init: tcpip mbox: 32[0m
+[0;32mI (423) wifi_init: udp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp mbox: 6[0m
+[0;32mI (429) wifi_init: tcp tx win: 5760[0m
+[0;32mI (432) wifi_init: tcp rx win: 5760[0m
+[0;32mI (435) wifi_init: tcp mss: 1440[0m
+[0;32mI (438) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (442) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (446) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (485) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (486) wifi:enable tsf[0m
+[0;32mI (487) ESPNOW: espnow [version: 2.0] init[0m

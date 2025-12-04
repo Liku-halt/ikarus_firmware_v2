@@ -1,0 +1,190 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c97a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 20 2025 19:04:30[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a1fch (107004) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0002a224 vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d05c vaddr=40380000 size=02fbch ( 12220) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=925dch (599516) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c2604 vaddr=40382fbc size=10ecch ( 69324) load[0m
+[0;32mI (220) esp_image: segment 5: paddr=000d34d8 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Unicore app[0m
+[0;32mI (246) cpu_start: Pro cpu start user code[0m
+[0;32mI (246) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) app_init: Application information:[0m
+[0;32mI (247) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (251) app_init: App version:      1[0m
+[0;32mI (255) app_init: Compile time:     Oct 20 2025 19:04:17[0m
+[0;32mI (260) app_init: ELF file SHA256:  6b28bb301...[0m
+[0;32mI (264) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (268) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (272) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (276) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9B1F0 len 00024E10 (147 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (298) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (304) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (316) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (323) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (329) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+D (336) i2c.common: new bus(0) at 0x3fc9ec8c
+D (346) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (356) pp: pp rom version: 9387209[0m
+[0;32mI (356) net80211: net80211 rom version: 9387209[0m
+[0;32mI (366) wifi:wifi driver task: 3fca3d44, prio:23, stack:6656, core=0[0m
+[0;32mI (366) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (366) wifi:wifi certification version: v7.0[0m
+[0;32mI (366) wifi:config NVS flash: enabled[0m
+[0;32mI (376) wifi:config nano formatting: disabled[0m
+[0;32mI (376) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (376) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (386) wifi:Init management short buffer num: 32[0m
+[0;32mI (386) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (396) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (396) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (406) wifi:Init static rx buffer num: 10[0m
+[0;32mI (406) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (406) wifi_init: rx ba win: 6[0m
+[0;32mI (416) wifi_init: accept mbox: 6[0m
+[0;32mI (416) wifi_init: tcpip mbox: 32[0m
+[0;32mI (416) wifi_init: udp mbox: 6[0m
+[0;32mI (416) wifi_init: tcp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp tx win: 5760[0m
+[0;32mI (426) wifi_init: tcp rx win: 5760[0m
+[0;32mI (426) wifi_init: tcp mss: 1440[0m
+[0;32mI (436) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (436) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (436) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (476) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (526) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (526) wifi:enable tsf[0m
+[0;32mI (536) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (556) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+59579I (4256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67656
+[0;32mI (4356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67840[0m
+[0;32mI (4456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68072[0m
+[0;32mI (4556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67712[0m
+[0;32mI (4656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67840[0m
+[0;32mI (4756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68256[0m
+[0;32mI (4856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68128[0m
+[0;32mI (4956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67984[0m
+[0;32mI (5056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67912[0m
+[0;32mI (5156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67992[0m
+[0;32mI (5256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67864[0m
+[0;32mI (5356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67840[0m
+[0;32mI (5456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67856[0m
+[0;32mI (5556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67912[0m
+[0;32mI (5656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67800[0m
+[0;32mI (5756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67656[0m
+[0;32mI (5856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68152[0m
+[0;32mI (5956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67552[0m
+[0;32mI (6056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67984[0m
+[0;32mI (6156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68008[0m
+[0;32mI (6256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68088[0m
+[0;32mI (6356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67768[0m
+[0;32mI (6456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67808[0m
+[0;32mI (6556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67872[0m
+[0;32mI (6656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68144[0m
+[0;32mI (6756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67880[0m
+[0;32mI (6856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67840[0m
+[0;32mI (6956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67520[0m
+[0;32mI (7056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67584[0m
+[0;32mI (7156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68096[0m
+[0;32mI (7256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67912[0m
+[0;32mI (7356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67952[0m
+[0;32mI (7456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67880[0m
+[0;32mI (7556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67744[0m
+[0;32mI (7656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67776[0m
+[0;32mI (7756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68200[0m
+[0;32mI (7856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67816[0m
+[0;32mI (7956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67520[0m
+[0;32mI (8056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68240[0m
+[0;32mI (8156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67904[0m
+[0;32mI (8256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68096[0m
+[0;32mI (8356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67904[0m
+[0;32mI (8456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67608[0m
+[0;32mI (8556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67600[0m
+[0;32mI (8656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67808[0m
+[0;32mI (8756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67648[0m
+[0;32mI (8856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67880[0m
+[0;32mI (8956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67936[0m
+[0;32mI (9056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67784[0m
+[0;32mI (9156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68144[0m
+[0;32mI (9256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67960[0m
+[0;32mI (9356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67712[0m
+[0;32mI (9456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67960[0m
+[0;32mI (9556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67712[0m
+[0;32mI (9656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68056[0m
+[0;32mI (9756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68088[0m
+[0;32mI (9856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68280[0m
+[0;32mI (9956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68360[0m
+[0;32mI (10056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=69480[0m
+[0;32mI (10156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67216[0m
+[0;32mI (10256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67512[0m
+[0;32mI (10356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=59928[0m
+[0;32mI (10456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=53344[0m
+[0;32mI (10556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=50256[0m
+[0;32mI (10656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=53112[0m
+[0;32mI (10756) APP_MAIN: Received data: accle=-91.000000, bat=0, roll=48728[0m
+[0;32mI (10856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=55088[0m
+[0;32mI (10956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=77768[0m
+[0;32mI (11056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=65944[0m
+[0;32mI (11156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=61968[0m
+[0;32mI (11256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67568[0m
+[0;32mI (11356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=66856[0m
+[0;32mI (11456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68952[0m
+[0;32mI (11556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68440[0m
+[0;32mI (11656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68032[0m
+[0;32mI (11756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68848[0m
+[0;32mI (11856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=61336[0m
+[0;32mI (11956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67624[0m
+[0;32mI (12056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68040[0m
+[0;32mI (12156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=72472[0m
+[0;32mI (12256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67544[0m
+[0;32mI (12356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=102912[0m
+[0;32mI (12456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68760[0m
+[0;32mI (12556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68080[0m
+[0;32mI (12656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68640[0m
+[0;32mI (12756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68384[0m
+[0;32mI (12856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68328[0m
+[0;32mI (12956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68112[0m
+[0;32mI (13056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67824[0m
+[0;32mI (13156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67744[0m
+[0;32mI (13256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67840[0m
+[0;32mI (13356) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67928[0m
+[0;32mI (13456) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68024[0m
+[0;32mI (13556) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67976[0m
+[0;32mI (13656) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67888[0m
+[0;32mI (13756) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67984[0m
+[0;32mI (13856) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67568[0m
+[0;32mI (13956) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68168[0m
+[0;32mI (14056) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68080[0m
+[0;32mI (14156) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=67504[0m
+[0;32mI (14256) APP_MAIN: Received data: accle=-90.000000, bat=0, roll=68096[0m

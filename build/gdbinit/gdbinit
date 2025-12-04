@@ -1,0 +1,2 @@
+source /home/liku/esp/ikarus_firmware_v2/build/gdbinit/symbols
+source /home/liku/esp/ikarus_firmware_v2/build/gdbinit/connect

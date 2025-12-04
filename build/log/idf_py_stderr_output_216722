@@ -1,0 +1,25 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4004c626: [0;33muart_rx_readbuff[0m[0m in [0;32mROM[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x42013d4e: [0;33mi2c_ll_is_bus_busy[0m[0m at [0;32m/home/liku/esp/esp-idf/components/hal/esp32c3/include/hal/i2c_ll.h[0m[0m:[1;31m569[0m
+[0m--- (inlined by) [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m526[0m
+[0m--- 0x42013c6a: [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m519[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x42013d48: [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m527[0m
+[0m--- 0x42013c6a: [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m519[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x42013d50: [0;33mi2c_ll_is_bus_busy[0m[0m at [0;32m/home/liku/esp/esp-idf/components/hal/esp32c3/include/hal/i2c_ll.h[0m[0m:[1;31m569[0m
+[0m--- (inlined by) [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m526[0m
+[0m--- 0x42013c6a: [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m519[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x42013d52: [0;33mi2c_ll_is_bus_busy[0m[0m at [0;32m/home/liku/esp/esp-idf/components/hal/esp32c3/include/hal/i2c_ll.h[0m[0m:[1;31m569[0m
+[0m--- (inlined by) [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m526[0m
+[0m--- 0x42013c6a: [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m519[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32m/home/liku/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0m--- 0x42013d50: [0;33mi2c_ll_is_bus_busy[0m[0m at [0;32m/home/liku/esp/esp-idf/components/hal/esp32c3/include/hal/i2c_ll.h[0m[0m:[1;31m569[0m
+[0m--- (inlined by) [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m526[0m
+[0m--- 0x42013c6a: [0;33ms_i2c_send_commands[0m[0m at [0;32m/home/liku/esp/esp-idf/components/esp_driver_i2c/i2c_master.c[0m[0m:[1;31m519[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

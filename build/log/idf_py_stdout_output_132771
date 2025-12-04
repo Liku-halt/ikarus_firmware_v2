@@ -1,0 +1,497 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c976
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1574
+load:0x403cc710,len:0xc30
+load:0x403ce710,len:0x2f64
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 20 2025 19:04:30[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1a204h (107012) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0002a22c vaddr=3fc94000 size=02e30h ( 11824) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0002d064 vaddr=40380000 size=02fb4h ( 12212) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=92a3ch (600636) map[0m
+[0;32mI (208) esp_image: segment 4: paddr=000c2a64 vaddr=40382fb4 size=10ed4h ( 69332) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=000d3940 vaddr=50000200 size=0001ch (    28) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Unicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) app_init: Application information:[0m
+[0;32mI (247) app_init: Project name:     ikarus_firmware_v2[0m
+[0;32mI (252) app_init: App version:      1[0m
+[0;32mI (255) app_init: Compile time:     Oct 20 2025 19:04:17[0m
+[0;32mI (260) app_init: ELF file SHA256:  70ef95600...[0m
+[0;32mI (264) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (269) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (272) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (276) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FC9B210 len 00024DF0 (147 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (298) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (304) heap_init: At 5000021C len 00001DCC (7 KiB): RTCRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (316) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (323) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (329) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+D (336) i2c.common: new bus(0) at 0x3fc9ecac
+D (346) i2c.common: bus clock source frequency: 40000000hz
+[0;32mI (356) pp: pp rom version: 9387209[0m
+[0;32mI (356) net80211: net80211 rom version: 9387209[0m
+[0;32mI (366) wifi:wifi driver task: 3fca3d64, prio:23, stack:6656, core=0[0m
+[0;32mI (366) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (366) wifi:wifi certification version: v7.0[0m
+[0;32mI (366) wifi:config NVS flash: enabled[0m
+[0;32mI (376) wifi:config nano formatting: disabled[0m
+[0;32mI (376) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (376) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (386) wifi:Init management short buffer num: 32[0m
+[0;32mI (386) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (396) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (396) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (406) wifi:Init static rx buffer num: 10[0m
+[0;32mI (406) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (406) wifi_init: rx ba win: 6[0m
+[0;32mI (416) wifi_init: accept mbox: 6[0m
+[0;32mI (416) wifi_init: tcpip mbox: 32[0m
+[0;32mI (416) wifi_init: udp mbox: 6[0m
+[0;32mI (416) wifi_init: tcp mbox: 6[0m
+[0;32mI (426) wifi_init: tcp tx win: 5760[0m
+[0;32mI (426) wifi_init: tcp rx win: 5760[0m
+[0;32mI (426) wifi_init: tcp mss: 1440[0m
+[0;32mI (436) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (436) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (436) phy_init: phy_version 1200,2b7123f9,Feb 18 2025,15:22:21[0m
+[0;32mI (476) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (526) wifi:mode : sta (98:3d:ae:a9:e8:b0)[0m
+[0;32mI (526) wifi:enable tsf[0m
+[0;32mI (536) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (556) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3556) APP_MAIN: Received data: angle=0.000000, index=-14, raw=16565[0m
+[0;32mI (3656) APP_MAIN: Received data: angle=0.000000, index=-9, raw=16517[0m
+[0;32mI (3756) APP_MAIN: Received data: angle=0.000000, index=-12, raw=16563[0m
+[0;32mI (3856) APP_MAIN: Received data: angle=0.000000, index=2, raw=16557[0m
+[0;32mI (3956) APP_MAIN: Received data: angle=0.056015, index=19, raw=16531[0m
+[0;32mI (4056) APP_MAIN: Received data: angle=0.000000, index=15, raw=16576[0m
+[0;32mI (4156) APP_MAIN: Received data: angle=0.056015, index=21, raw=16550[0m
+[0;32mI (4256) APP_MAIN: Received data: angle=-0.056015, index=-17, raw=16538[0m
+[0;32mI (4356) APP_MAIN: Received data: angle=-0.056015, index=-21, raw=16619[0m
+[0;32mI (4456) APP_MAIN: Received data: angle=-0.056015, index=-20, raw=16556[0m
+[0;32mI (4556) APP_MAIN: Received data: angle=-0.056015, index=-17, raw=16563[0m
+[0;32mI (4656) APP_MAIN: Received data: angle=-0.112015, index=-41, raw=16521[0m
+[0;32mI (4756) APP_MAIN: Received data: angle=0.000000, index=-5, raw=16546[0m
+[0;32mI (4856) APP_MAIN: Received data: angle=0.056015, index=30, raw=16556[0m
+[0;32mI (4956) APP_MAIN: Received data: angle=0.000000, index=-4, raw=16574[0m
+[0;32mI (5056) APP_MAIN: Received data: angle=0.112015, index=34, raw=16610[0m
+[0;32mI (5156) APP_MAIN: Received data: angle=0.000000, index=-8, raw=16549[0m
+[0;32mI (5256) APP_MAIN: Received data: angle=0.056015, index=25, raw=16549[0m
+[0;32mI (5356) APP_MAIN: Received data: angle=0.000000, index=0, raw=16579[0m
+[0;32mI (5456) APP_MAIN: Received data: angle=0.000000, index=-7, raw=16581[0m
+[0;32mI (5556) APP_MAIN: Received data: angle=0.000000, index=5, raw=16543[0m
+[0;32mI (5656) APP_MAIN: Received data: angle=0.000000, index=10, raw=16554[0m
+[0;32mI (5756) APP_MAIN: Received data: angle=0.000000, index=15, raw=16589[0m
+[0;32mI (5856) APP_MAIN: Received data: angle=0.000000, index=0, raw=16563[0m
+[0;32mI (5956) APP_MAIN: Received data: angle=0.000000, index=14, raw=16531[0m
+[0;32mI (6056) APP_MAIN: Received data: angle=0.000000, index=-16, raw=16571[0m
+[0;32mI (6156) APP_MAIN: Received data: angle=0.000000, index=8, raw=16548[0m
+[0;32mI (6256) APP_MAIN: Received data: angle=0.000000, index=-16, raw=16596[0m
+[0;32mI (6356) APP_MAIN: Received data: angle=0.000000, index=-11, raw=16562[0m
+[0;32mI (6456) APP_MAIN: Received data: angle=0.000000, index=11, raw=16521[0m
+[0;32mI (6556) APP_MAIN: Received data: angle=0.000000, index=-2, raw=16542[0m
+[0;32mI (6656) APP_MAIN: Received data: angle=0.056015, index=18, raw=16559[0m
+[0;32mI (6756) APP_MAIN: Received data: angle=0.056015, index=20, raw=16506[0m
+[0;32mI (6856) APP_MAIN: Received data: angle=0.000000, index=-3, raw=16530[0m
+[0;32mI (6956) APP_MAIN: Received data: angle=0.000000, index=-8, raw=16577[0m
+[0;32mI (7056) APP_MAIN: Received data: angle=-0.112015, index=-37, raw=16554[0m
+[0;32mI (7156) APP_MAIN: Received data: angle=-0.056015, index=-20, raw=16586[0m
+[0;32mI (7256) APP_MAIN: Received data: angle=-0.056015, index=-27, raw=16544[0m
+[0;32mI (7356) APP_MAIN: Received data: angle=-0.056015, index=-23, raw=16577[0m
+[0;32mI (7456) APP_MAIN: Received data: angle=0.000000, index=6, raw=16585[0m
+[0;32mI (7556) APP_MAIN: Received data: angle=0.000000, index=2, raw=16588[0m
+[0;32mI (7656) APP_MAIN: Received data: angle=0.224030, index=67, raw=16545[0m
+[0;32mI (7756) APP_MAIN: Received data: angle=-1.008026, index=-306, raw=16597[0m
+[0;32mI (7856) APP_MAIN: Received data: angle=0.392044, index=124, raw=16545[0m
+[0;32mI (7956) APP_MAIN: Received data: angle=0.000000, index=15, raw=16606[0m
+[0;32mI (8056) APP_MAIN: Received data: angle=-0.672058, index=-208, raw=16382[0m
+[0;32mI (8156) APP_MAIN: Received data: angle=-1.399918, index=-419, raw=16681[0m
+[0;32mI (8256) APP_MAIN: Received data: angle=1.903564, index=534, raw=15989[0m
+[0;32mI (8356) APP_MAIN: Received data: angle=4.527176, index=1304, raw=16295[0m
+[0;32mI (8456) APP_MAIN: Received data: angle=6.358627, index=1844, raw=16477[0m
+[0;32mI (8556) APP_MAIN: Received data: angle=7.902588, index=2299, raw=16515[0m
+[0;32mI (8656) APP_MAIN: Received data: angle=7.462540, index=2153, raw=16366[0m
+[0;32mI (8756) APP_MAIN: Received data: angle=8.232010, index=2366, raw=16320[0m
+[0;32mI (8856) APP_MAIN: Received data: angle=8.670395, index=2481, raw=16264[0m
+[0;32mI (8956) APP_MAIN: Received data: angle=8.341705, index=2387, raw=16265[0m
+[0;32mI (9056) APP_MAIN: Received data: angle=9.979218, index=2854, raw=16202[0m
+[0;32mI (9156) APP_MAIN: Received data: angle=9.598495, index=2743, raw=16170[0m
+[0;32mI (9256) APP_MAIN: Received data: angle=10.142120, index=2886, raw=16082[0m
+[0;32mI (9356) APP_MAIN: Received data: angle=9.979218, index=2849, raw=16150[0m
+[0;32mI (9456) APP_MAIN: Received data: angle=10.142120, index=2890, raw=16097[0m
+[0;32mI (9556) APP_MAIN: Received data: angle=10.575684, index=3012, raw=16070[0m
+[0;32mI (9656) APP_MAIN: Received data: angle=10.359055, index=2968, raw=16161[0m
+[0;32mI (9756) APP_MAIN: Received data: angle=10.629807, index=3012, raw=15981[0m
+[0;32mI (9856) APP_MAIN: Received data: angle=9.162354, index=2628, raw=16254[0m
+[0;32mI (9956) APP_MAIN: Received data: angle=6.524536, index=1919, raw=16707[0m
+[0;32mI (10056) APP_MAIN: Received data: angle=0.336044, index=100, raw=15690[0m
+[0;32mI (10156) APP_MAIN: Received data: angle=0.448059, index=139, raw=16832[0m
+[0;32mI (10256) APP_MAIN: Received data: angle=-0.896042, index=-259, raw=16478[0m
+[0;32mI (10356) APP_MAIN: Received data: angle=-0.056015, index=-32, raw=16532[0m
+[0;32mI (10456) APP_MAIN: Received data: angle=-2.742279, index=-792, raw=16398[0m
+[0;32mI (10556) APP_MAIN: Received data: angle=-4.248779, index=-1228, raw=16425[0m
+[0;32mI (10656) APP_MAIN: Received data: angle=-7.242172, index=-1996, raw=15623[0m
+[0;32mI (10756) APP_MAIN: Received data: angle=-7.737671, index=-2146, raw=15767[0m
+[0;32mI (10856) APP_MAIN: Received data: angle=-7.297287, index=-2066, raw=16088[0m
+[0;32mI (10956) APP_MAIN: Received data: angle=-9.598495, index=-2672, raw=15723[0m
+[0;32mI (11056) APP_MAIN: Received data: angle=-9.816162, index=-2717, raw=15624[0m
+[0;32mI (11156) APP_MAIN: Received data: angle=-9.870529, index=-2744, raw=15685[0m
+[0;32mI (11256) APP_MAIN: Received data: angle=-10.196381, index=-2706, raw=15008[0m
+[0;32mI (11356) APP_MAIN: Received data: angle=-8.177139, index=-2250, raw=15608[0m
+[0;32mI (11456) APP_MAIN: Received data: angle=-5.138870, index=-1440, raw=15913[0m
+[0;32mI (11556) APP_MAIN: Received data: angle=0.504059, index=146, raw=15736[0m
+[0;32mI (11656) APP_MAIN: Received data: angle=2.798157, index=813, raw=16341[0m
+[0;32mI (11756) APP_MAIN: Received data: angle=4.471512, index=1269, raw=16216[0m
+[0;32mI (11856) APP_MAIN: Received data: angle=3.468231, index=948, raw=15422[0m
+[0;32mI (11956) APP_MAIN: Received data: angle=8.834518, index=2537, raw=16242[0m
+[0;32mI (12056) APP_MAIN: Received data: angle=10.413239, index=2969, raw=16140[0m
+[0;32mI (12156) APP_MAIN: Received data: angle=12.937332, index=3710, raw=16139[0m
+[0;32mI (12256) APP_MAIN: Received data: angle=12.777634, index=3557, raw=15669[0m
+[0;32mI (12356) APP_MAIN: Received data: angle=13.309174, index=3719, raw=15691[0m
+[0;32mI (12456) APP_MAIN: Received data: angle=16.447144, index=4682, raw=15822[0m
+[0;32mI (12556) APP_MAIN: Received data: angle=14.784912, index=3983, raw=15051[0m
+[0;32mI (12656) APP_MAIN: Received data: angle=17.522888, index=4802, raw=15172[0m
+[0;32mI (12756) APP_MAIN: Received data: angle=18.485336, index=5110, raw=15269[0m
+[0;32mI (12856) APP_MAIN: Received data: angle=17.267883, index=4716, raw=15126[0m
+[0;32mI (12956) APP_MAIN: Received data: angle=17.980103, index=4895, raw=15072[0m
+[0;32mI (13056) APP_MAIN: Received data: angle=17.369965, index=5044, raw=16101[0m
+[0;32mI (13156) APP_MAIN: Received data: angle=11.008041, index=3168, raw=16211[0m
+[0;32mI (13256) APP_MAIN: Received data: angle=2.462814, index=686, raw=15735[0m
+[0;32mI (13356) APP_MAIN: Received data: angle=1.120010, index=326, raw=16167[0m
+[0;32mI (13456) APP_MAIN: Received data: angle=-2.518723, index=-711, raw=15923[0m
+[0;32mI (13556) APP_MAIN: Received data: angle=-5.583023, index=-1574, raw=16009[0m
+[0;32mI (13656) APP_MAIN: Received data: angle=-7.517593, index=-2094, raw=15811[0m
+[0;32mI (13756) APP_MAIN: Received data: angle=-10.575684, index=-2845, raw=15226[0m
+[0;32mI (13856) APP_MAIN: Received data: angle=-12.617737, index=-3299, raw=14713[0m
+[0;32mI (13956) APP_MAIN: Received data: angle=-15.723236, index=-4084, raw=14488[0m
+[0;32mI (14056) APP_MAIN: Received data: angle=-15.150803, index=-3947, raw=14566[0m
+[0;32mI (14156) APP_MAIN: Received data: angle=-14.837250, index=-3843, raw=14466[0m
+[0;32mI (14256) APP_MAIN: Received data: angle=-14.260056, index=-3704, raw=14541[0m
+[0;32mI (14356) APP_MAIN: Received data: angle=-15.150803, index=-4005, raw=14775[0m
+[0;32mI (14456) APP_MAIN: Received data: angle=-15.098618, index=-3965, raw=14647[0m
+[0;32mI (14556) APP_MAIN: Received data: angle=-15.202972, index=-3983, raw=14625[0m
+[0;32mI (14656) APP_MAIN: Received data: angle=-16.601562, index=-4208, raw=14069[0m
+[0;32mI (14756) APP_MAIN: Received data: angle=-16.085846, index=-4173, raw=14439[0m
+[0;32mI (14856) APP_MAIN: Received data: angle=-16.550110, index=-4264, raw=14317[0m
+[0;32mI (14956) APP_MAIN: Received data: angle=-17.675552, index=-4450, raw=13954[0m
+[0;32mI (15056) APP_MAIN: Received data: angle=-17.012161, index=-4313, raw=14059[0m
+[0;32mI (15156) APP_MAIN: Received data: angle=-16.395599, index=-4320, raw=14668[0m
+[0;32mI (15256) APP_MAIN: Received data: angle=-23.083572, index=-5496, raw=12886[0m
+[0;32mI (15356) APP_MAIN: Received data: angle=-20.721588, index=-5087, raw=13438[0m
+[0;32mI (15456) APP_MAIN: Received data: angle=-20.917313, index=-5086, raw=13298[0m
+[0;32mI (15556) APP_MAIN: Received data: angle=-22.320953, index=-5377, raw=13079[0m
+[0;32mI (15656) APP_MAIN: Received data: angle=-23.036163, index=-5459, raw=12830[0m
+[0;32mI (15756) APP_MAIN: Received data: angle=-15.463425, index=-3820, raw=13761[0m
+[0;32mI (15856) APP_MAIN: Received data: angle=-5.305511, index=-1762, raw=18798[0m
+[0;32mI (15956) APP_MAIN: Received data: angle=-4.193069, index=-1302, raw=17758[0m
+[0;32mI (16056) APP_MAIN: Received data: angle=0.504059, index=154, raw=16911[0m
+[0;32mI (16156) APP_MAIN: Received data: angle=-2.239166, index=-614, raw=15657[0m
+[0;32mI (16256) APP_MAIN: Received data: angle=7.517593, index=2176, raw=16397[0m
+[0;32mI (16356) APP_MAIN: Received data: angle=7.902588, index=2264, raw=16210[0m
+[0;32mI (16456) APP_MAIN: Received data: angle=13.415207, index=3818, raw=15977[0m
+[0;32mI (16556) APP_MAIN: Received data: angle=14.575272, index=4039, raw=15490[0m
+[0;32mI (16656) APP_MAIN: Received data: angle=17.827957, index=4907, raw=15257[0m
+[0;32mI (16756) APP_MAIN: Received data: angle=19.187698, index=5204, raw=14920[0m
+[0;32mI (16856) APP_MAIN: Received data: angle=20.721588, index=5558, raw=14656[0m
+[0;32mI (16956) APP_MAIN: Received data: angle=20.427048, index=5424, raw=14531[0m
+[0;32mI (17056) APP_MAIN: Received data: angle=21.598343, index=5658, raw=14268[0m
+[0;32mI (17156) APP_MAIN: Received data: angle=23.743866, index=6275, raw=14258[0m
+[0;32mI (17256) APP_MAIN: Received data: angle=23.130966, index=6197, raw=14493[0m
+[0;32mI (17356) APP_MAIN: Received data: angle=23.178314, index=6044, raw=14091[0m
+[0;32mI (17456) APP_MAIN: Received data: angle=23.272903, index=6055, raw=14074[0m
+[0;32mI (17556) APP_MAIN: Received data: angle=23.696915, index=6179, raw=14050[0m
+[0;32mI (17656) APP_MAIN: Received data: angle=24.258011, index=6516, raw=14451[0m
+[0;32mI (17756) APP_MAIN: Received data: angle=24.814194, index=6416, raw=13851[0m
+[0;32mI (17856) APP_MAIN: Received data: angle=24.629349, index=6210, raw=13535[0m
+[0;32mI (17956) APP_MAIN: Received data: angle=26.273071, index=6629, raw=13408[0m
+[0;32mI (18056) APP_MAIN: Received data: angle=28.394196, index=7311, raw=13502[0m
+[0;32mI (18156) APP_MAIN: Received data: angle=28.480804, index=7130, raw=13133[0m
+[0;32mI (18256) APP_MAIN: Received data: angle=28.220535, index=6896, raw=12849[0m
+[0;32mI (18356) APP_MAIN: Received data: angle=28.954651, index=7061, raw=12750[0m
+[0;32mI (18456) APP_MAIN: Received data: angle=30.433716, index=7439, raw=12644[0m
+[0;32mI (18556) APP_MAIN: Received data: angle=31.054276, index=7930, raw=13151[0m
+[0;32mI (18656) APP_MAIN: Received data: angle=31.463531, index=7852, raw=12824[0m
+[0;32mI (18756) APP_MAIN: Received data: angle=30.724304, index=7564, raw=12708[0m
+[0;32mI (18856) APP_MAIN: Received data: angle=30.225082, index=7697, raw=13203[0m
+[0;32mI (18956) APP_MAIN: Received data: angle=24.258011, index=6312, raw=14003[0m
+[0;32mI (19056) APP_MAIN: Received data: angle=15.982376, index=4167, raw=14543[0m
+[0;32mI (19156) APP_MAIN: Received data: angle=12.617737, index=3491, raw=15528[0m
+[0;32mI (19256) APP_MAIN: Received data: angle=6.745575, index=1943, raw=16362[0m
+[0;32mI (19356) APP_MAIN: Received data: angle=0.280029, index=93, raw=16526[0m
+[0;32mI (19456) APP_MAIN: Received data: angle=-2.015442, index=-580, raw=16284[0m
+[0;32mI (19556) APP_MAIN: Received data: angle=-6.413940, index=-1737, raw=15360[0m
+[0;32mI (19656) APP_MAIN: Received data: angle=-11.008041, index=-2911, raw=14925[0m
+[0;32mI (19756) APP_MAIN: Received data: angle=-14.312653, index=-3778, raw=14754[0m
+[0;32mI (19856) APP_MAIN: Received data: angle=-16.034119, index=-4127, raw=14323[0m
+[0;32mI (19956) APP_MAIN: Received data: angle=-16.189209, index=-4102, raw=14095[0m
+[0;32mI (20056) APP_MAIN: Received data: angle=-16.447144, index=-4148, raw=14034[0m
+[0;32mI (20156) APP_MAIN: Received data: angle=-15.567429, index=-4004, raw=14371[0m
+[0;32mI (20256) APP_MAIN: Received data: angle=-15.515442, index=-3995, raw=14366[0m
+[0;32mI (20356) APP_MAIN: Received data: angle=-12.190338, index=-3265, raw=15072[0m
+[0;32mI (20456) APP_MAIN: Received data: angle=-1.399918, index=-417, raw=17008[0m
+[0;32mI (20556) APP_MAIN: Received data: angle=-0.280029, index=-100, raw=17326[0m
+[0;32mI (20656) APP_MAIN: Received data: angle=0.168030, index=50, raw=16286[0m
+[0;32mI (20756) APP_MAIN: Received data: angle=0.448059, index=126, raw=15573[0m
+[0;32mI (20856) APP_MAIN: Received data: angle=7.131912, index=1991, raw=15878[0m
+[0;32mI (20956) APP_MAIN: Received data: angle=12.511017, index=3604, raw=16214[0m
+[0;32mI (21056) APP_MAIN: Received data: angle=11.600449, index=3259, raw=15803[0m
+[0;32mI (21156) APP_MAIN: Received data: angle=14.207428, index=3879, raw=15283[0m
+[0;32mI (21256) APP_MAIN: Received data: angle=17.063370, index=4784, raw=15543[0m
+[0;32mI (21356) APP_MAIN: Received data: angle=17.675552, index=4897, raw=15335[0m
+[0;32mI (21456) APP_MAIN: Received data: angle=18.233078, index=5109, raw=15504[0m
+[0;32mI (21556) APP_MAIN: Received data: angle=17.929413, index=5013, raw=15489[0m
+[0;32mI (21656) APP_MAIN: Received data: angle=16.447144, index=4695, raw=15865[0m
+[0;32mI (21756) APP_MAIN: Received data: angle=12.884125, index=3626, raw=15788[0m
+[0;32mI (21856) APP_MAIN: Received data: angle=6.413940, index=1779, raw=15711[0m
+[0;32mI (21956) APP_MAIN: Received data: angle=0.168030, index=59, raw=15803[0m
+[0;32mI (22056) APP_MAIN: Received data: angle=-1.847610, index=-536, raw=16302[0m
+[0;32mI (22156) APP_MAIN: Received data: angle=-3.189133, index=-919, raw=16242[0m
+[0;32mI (22256) APP_MAIN: Received data: angle=-9.707367, index=-2693, raw=15726[0m
+[0;32mI (22356) APP_MAIN: Received data: angle=-10.196381, index=-2775, raw=15408[0m
+[0;32mI (22456) APP_MAIN: Received data: angle=-13.626999, index=-3561, raw=14682[0m
+[0;32mI (22556) APP_MAIN: Received data: angle=-13.785583, index=-3629, raw=14762[0m
+[0;32mI (22656) APP_MAIN: Received data: angle=-13.626999, index=-3569, raw=14671[0m
+[0;32mI (22756) APP_MAIN: Received data: angle=-13.626999, index=-3587, raw=14773[0m
+[0;32mI (22856) APP_MAIN: Received data: angle=-13.362213, index=-3542, raw=14869[0m
+[0;32mI (22956) APP_MAIN: Received data: angle=-12.990524, index=-3434, raw=14863[0m
+[0;32mI (23056) APP_MAIN: Received data: angle=-12.511017, index=-3323, raw=14970[0m
+[0;32mI (23156) APP_MAIN: Received data: angle=-10.846054, index=-2864, raw=14909[0m
+[0;32mI (23256) APP_MAIN: Received data: angle=1.903564, index=537, raw=15977[0m
+[0;32mI (23356) APP_MAIN: Received data: angle=5.749405, index=1653, raw=16278[0m
+[0;32mI (23456) APP_MAIN: Received data: angle=10.954056, index=3191, raw=16452[0m
+[0;32mI (23556) APP_MAIN: Received data: angle=10.142120, index=2806, raw=15677[0m
+[0;32mI (23656) APP_MAIN: Received data: angle=14.889572, index=4047, raw=15207[0m
+[0;32mI (23756) APP_MAIN: Received data: angle=15.255112, index=4203, raw=15388[0m
+[0;32mI (23856) APP_MAIN: Received data: angle=16.807083, index=4590, raw=15171[0m
+[0;32mI (23956) APP_MAIN: Received data: angle=18.182541, index=4954, raw=15067[0m
+[0;32mI (24056) APP_MAIN: Received data: angle=17.980103, index=4924, raw=15168[0m
+[0;32mI (24156) APP_MAIN: Received data: angle=19.037689, index=5239, raw=15176[0m
+[0;32mI (24256) APP_MAIN: Received data: angle=12.830887, index=3630, raw=15921[0m
+[0;32mI (24356) APP_MAIN: Received data: angle=2.350998, index=709, raw=16943[0m
+[0;32mI (24456) APP_MAIN: Received data: angle=-3.747162, index=-1050, raw=15802[0m
+[0;32mI (24556) APP_MAIN: Received data: angle=-12.243851, index=-3308, raw=15230[0m
+[0;32mI (24656) APP_MAIN: Received data: angle=-11.169846, index=-2950, raw=14902[0m
+[0;32mI (24756) APP_MAIN: Received data: angle=-15.567429, index=-3990, raw=14315[0m
+[0;32mI (24856) APP_MAIN: Received data: angle=-16.034119, index=-4087, raw=14183[0m
+[0;32mI (24956) APP_MAIN: Received data: angle=-16.034119, index=-4000, raw=13912[0m
+[0;32mI (25056) APP_MAIN: Received data: angle=-16.137543, index=-4006, raw=13810[0m
+[0;32mI (25156) APP_MAIN: Received data: angle=-16.755753, index=-4142, raw=13753[0m
+[0;32mI (25256) APP_MAIN: Received data: angle=-12.511017, index=-3178, raw=14299[0m
+[0;32mI (25356) APP_MAIN: Received data: angle=0.336044, index=104, raw=16590[0m
+[0;32mI (25456) APP_MAIN: Received data: angle=6.690338, index=2039, raw=17327[0m
+[0;32mI (25556) APP_MAIN: Received data: angle=12.083282, index=3249, raw=15151[0m
+[0;32mI (25656) APP_MAIN: Received data: angle=14.417770, index=4033, raw=15686[0m
+[0;32mI (25756) APP_MAIN: Received data: angle=14.680130, index=4064, raw=15511[0m
+[0;32mI (25856) APP_MAIN: Received data: angle=15.878799, index=4394, raw=15402[0m
+[0;32mI (25956) APP_MAIN: Received data: angle=16.909683, index=4678, raw=15387[0m
+[0;32mI (26056) APP_MAIN: Received data: angle=17.114532, index=4739, raw=15346[0m
+[0;32mI (26156) APP_MAIN: Received data: angle=13.943954, index=3740, raw=15016[0m
+[0;32mI (26256) APP_MAIN: Received data: angle=9.053131, index=2514, raw=15716[0m
+[0;32mI (26356) APP_MAIN: Received data: angle=0.000000, index=6, raw=15810[0m
+[0;32mI (26456) APP_MAIN: Received data: angle=-5.249969, index=-1467, raw=15946[0m
+[0;32mI (26556) APP_MAIN: Received data: angle=-8.834518, index=-2428, raw=15607[0m
+[0;32mI (26656) APP_MAIN: Received data: angle=-12.350784, index=-3313, raw=15097[0m
+[0;32mI (26756) APP_MAIN: Received data: angle=-14.575272, index=-3828, raw=14695[0m
+[0;32mI (26856) APP_MAIN: Received data: angle=-16.189209, index=-4132, raw=14209[0m
+[0;32mI (26956) APP_MAIN: Received data: angle=-15.619385, index=-3952, raw=14100[0m
+[0;32mI (27056) APP_MAIN: Received data: angle=-17.726379, index=-4451, raw=13903[0m
+[0;32mI (27156) APP_MAIN: Received data: angle=-17.726379, index=-4545, raw=14191[0m
+[0;32mI (27256) APP_MAIN: Received data: angle=-9.544037, index=-2539, raw=15083[0m
+[0;32mI (27356) APP_MAIN: Received data: angle=-5.472046, index=-1502, raw=15562[0m
+[0;32mI (27456) APP_MAIN: Received data: angle=-0.448059, index=-136, raw=16191[0m
+[0;32mI (27556) APP_MAIN: Received data: angle=1.903564, index=559, raw=16446[0m
+[0;32mI (27656) APP_MAIN: Received data: angle=5.249969, index=1550, raw=16796[0m
+[0;32mI (27756) APP_MAIN: Received data: angle=11.115936, index=3182, raw=16169[0m
+[0;32mI (27856) APP_MAIN: Received data: angle=11.654175, index=3078, raw=14864[0m
+[0;32mI (27956) APP_MAIN: Received data: angle=19.884109, index=5497, raw=15186[0m
+[0;32mI (28056) APP_MAIN: Received data: angle=20.868423, index=5598, raw=14682[0m
+[0;32mI (28156) APP_MAIN: Received data: angle=23.743866, index=6482, raw=14715[0m
+[0;32mI (28256) APP_MAIN: Received data: angle=23.036163, index=6052, raw=14214[0m
+[0;32mI (28356) APP_MAIN: Received data: angle=24.860321, index=6301, raw=13592[0m
+[0;32mI (28456) APP_MAIN: Received data: angle=26.497803, index=6628, raw=13294[0m
+[0;32mI (28556) APP_MAIN: Received data: angle=29.466660, index=7220, raw=12759[0m
+[0;32mI (28656) APP_MAIN: Received data: angle=30.057541, index=7354, raw=12690[0m
+[0;32mI (28756) APP_MAIN: Received data: angle=31.585617, index=7926, raw=12873[0m
+[0;32mI (28856) APP_MAIN: Received data: angle=28.954651, index=7211, raw=13019[0m
+[0;32mI (28956) APP_MAIN: Received data: angle=21.840027, index=5701, raw=14216[0m
+[0;32mI (29056) APP_MAIN: Received data: angle=11.815247, index=3337, raw=15929[0m
+[0;32mI (29156) APP_MAIN: Received data: angle=2.686401, index=773, raw=16382[0m
+[0;32mI (29256) APP_MAIN: Received data: angle=-1.455887, index=-435, raw=16685[0m
+[0;32mI (29356) APP_MAIN: Received data: angle=-6.579819, index=-1930, raw=16686[0m
+[0;32mI (29456) APP_MAIN: Received data: angle=-10.575684, index=-2838, raw=15145[0m
+[0;32mI (29556) APP_MAIN: Received data: angle=-14.575272, index=-3819, raw=14644[0m
+[0;32mI (29656) APP_MAIN: Received data: angle=-16.344040, index=-4288, raw=14585[0m
+[0;32mI (29756) APP_MAIN: Received data: angle=-19.387283, index=-4678, raw=13291[0m
+[0;32mI (29856) APP_MAIN: Received data: angle=-23.743866, index=-5628, raw=12783[0m
+[0;32mI (29956) APP_MAIN: Received data: angle=-22.560181, index=-5365, raw=12892[0m
+[0;32mI (30056) APP_MAIN: Received data: angle=-23.602936, index=-5877, raw=13427[0m
+[0;32mI (30156) APP_MAIN: Received data: angle=-13.732742, index=-3712, raw=15130[0m
+[0;32mI (30256) APP_MAIN: Received data: angle=-15.255112, index=-4226, raw=15447[0m
+[0;32mI (30356) APP_MAIN: Received data: angle=-6.469254, index=-1933, raw=16926[0m
+[0;32mI (30456) APP_MAIN: Received data: angle=-3.244965, index=-916, raw=16078[0m
+[0;32mI (30556) APP_MAIN: Received data: angle=4.193069, index=1188, raw=16009[0m
+[0;32mI (30656) APP_MAIN: Received data: angle=7.352386, index=2119, raw=16386[0m
+[0;32mI (30756) APP_MAIN: Received data: angle=17.471939, index=4954, raw=15696[0m
+[0;32mI (30856) APP_MAIN: Received data: angle=20.574463, index=5514, raw=14678[0m
+[0;32mI (30956) APP_MAIN: Received data: angle=21.501434, index=5551, raw=14086[0m
+[0;32mI (31056) APP_MAIN: Received data: angle=24.998489, index=6592, raw=14125[0m
+[0;32mI (31156) APP_MAIN: Received data: angle=18.384521, index=4903, raw=14739[0m
+[0;32mI (31256) APP_MAIN: Received data: angle=6.026505, index=1552, raw=14609[0m
+[0;32mI (31356) APP_MAIN: Received data: angle=-0.504059, index=-148, raw=16006[0m
+[0;32mI (31456) APP_MAIN: Received data: angle=2.295090, index=701, raw=17105[0m
+[0;32mI (31556) APP_MAIN: Received data: angle=-10.304840, index=-2805, raw=15395[0m
+[0;32mI (31656) APP_MAIN: Received data: angle=-26.676956, index=-5788, raw=11513[0m
+[0;32mI (31756) APP_MAIN: Received data: angle=-31.136414, index=-7024, raw=11626[0m
+[0;32mI (31856) APP_MAIN: Received data: angle=-27.432098, index=-6310, raw=12136[0m
+[0;32mI (31956) APP_MAIN: Received data: angle=-30.807007, index=-6976, raw=11696[0m
+[0;32mI (32056) APP_MAIN: Received data: angle=-23.602936, index=-5730, raw=13096[0m
+[0;32mI (32156) APP_MAIN: Received data: angle=-14.732529, index=-3780, raw=14363[0m
+[0;32mI (32256) APP_MAIN: Received data: angle=-5.693954, index=-1554, raw=15527[0m
+[0;32mI (32356) APP_MAIN: Received data: angle=6.800812, index=1987, raw=16528[0m
+[0;32mI (32456) APP_MAIN: Received data: angle=10.954056, index=3180, raw=16382[0m
+[0;32mI (32556) APP_MAIN: Received data: angle=16.189209, index=4791, raw=16454[0m
+[0;32mI (32656) APP_MAIN: Received data: angle=17.063370, index=4705, raw=15300[0m
+[0;32mI (32756) APP_MAIN: Received data: angle=17.675552, index=4892, raw=15312[0m
+[0;32mI (32856) APP_MAIN: Received data: angle=17.318939, index=4750, raw=15219[0m
+[0;32mI (32956) APP_MAIN: Received data: angle=12.350784, index=3499, raw=15911[0m
+[0;32mI (33056) APP_MAIN: Received data: angle=-0.840057, index=-242, raw=16447[0m
+[0;32mI (33156) APP_MAIN: Received data: angle=-9.489563, index=-2550, raw=15195[0m
+[0;32mI (33256) APP_MAIN: Received data: angle=-13.679886, index=-3784, raw=15501[0m
+[0;32mI (33356) APP_MAIN: Received data: angle=-22.560181, index=-6095, raw=14661[0m
+[0;32mI (33456) APP_MAIN: Received data: angle=-22.416748, index=-5624, raw=13602[0m
+[0;32mI (33556) APP_MAIN: Received data: angle=-17.573807, index=-4500, raw=14196[0m
+[0;32mI (33656) APP_MAIN: Received data: angle=-10.792023, index=-2804, raw=14656[0m
+[0;32mI (33756) APP_MAIN: Received data: angle=-2.518723, index=-730, raw=16394[0m
+[0;32mI (33856) APP_MAIN: Received data: angle=3.356613, index=1013, raw=17067[0m
+[0;32mI (33956) APP_MAIN: Received data: angle=4.025909, index=1165, raw=16448[0m
+[0;32mI (34056) APP_MAIN: Received data: angle=7.131912, index=2041, raw=16202[0m
+[0;32mI (34156) APP_MAIN: Received data: angle=4.025909, index=1229, raw=17424[0m
+[0;32mI (34256) APP_MAIN: Received data: angle=4.248779, index=1259, raw=16921[0m
+[0;32mI (34356) APP_MAIN: Received data: angle=-5.194427, index=-1332, raw=14536[0m
+[0;32mI (34456) APP_MAIN: Received data: angle=-7.957520, index=-2245, raw=15981[0m
+[0;32mI (34556) APP_MAIN: Received data: angle=-20.328613, index=-5615, raw=15146[0m
+[0;32mI (34656) APP_MAIN: Received data: angle=-21.984650, index=-5069, raw=12546[0m
+[0;32mI (34756) APP_MAIN: Received data: angle=-21.355835, index=-5433, raw=13882[0m
+[0;32mI (34856) APP_MAIN: Received data: angle=-22.703323, index=-5528, raw=13212[0m
+[0;32mI (34956) APP_MAIN: Received data: angle=-20.279343, index=-5216, raw=14091[0m
+[0;32mI (35056) APP_MAIN: Received data: angle=-15.775116, index=-4215, raw=14897[0m
+[0;32mI (35156) APP_MAIN: Received data: angle=-17.063370, index=-4650, raw=15123[0m
+[0;32mI (35256) APP_MAIN: Received data: angle=-9.598495, index=-2739, raw=16131[0m
+[0;32mI (35356) APP_MAIN: Received data: angle=-9.489563, index=-2474, raw=14800[0m
+[0;32mI (35456) APP_MAIN: Received data: angle=-8.834518, index=-2469, raw=15789[0m
+[0;32mI (35556) APP_MAIN: Received data: angle=-12.830887, index=-3409, raw=14913[0m
+[0;32mI (35656) APP_MAIN: Received data: angle=-20.966171, index=-5353, raw=13968[0m
+[0;32mI (35756) APP_MAIN: Received data: angle=-15.567429, index=-4389, raw=15711[0m
+[0;32mI (35856) APP_MAIN: Received data: angle=-20.427048, index=-5238, raw=14028[0m
+[0;32mI (35956) APP_MAIN: Received data: angle=-19.486893, index=-5069, raw=14306[0m
+[0;32mI (36056) APP_MAIN: Received data: angle=-22.464600, index=-5734, raw=13861[0m
+[0;32mI (36156) APP_MAIN: Received data: angle=-19.636078, index=-5086, raw=14230[0m
+[0;32mI (36256) APP_MAIN: Received data: angle=-19.586380, index=-5075, raw=14252[0m
+[0;32mI (36356) APP_MAIN: Received data: angle=-21.307236, index=-5475, raw=14024[0m
+[0;32mI (36456) APP_MAIN: Received data: angle=-18.081375, index=-4748, raw=14530[0m
+[0;32mI (36556) APP_MAIN: Received data: angle=-20.623535, index=-5327, raw=14126[0m
+[0;32mI (36656) APP_MAIN: Received data: angle=-17.369965, index=-4655, raw=14848[0m
+[0;32mI (36756) APP_MAIN: Received data: angle=-20.377838, index=-5262, raw=14133[0m
+[0;32mI (36856) APP_MAIN: Received data: angle=-19.187698, index=-5052, raw=14510[0m
+[0;32mI (36956) APP_MAIN: Received data: angle=-20.819519, index=-5385, raw=14149[0m
+[0;32mI (37056) APP_MAIN: Received data: angle=-19.287552, index=-5043, raw=14400[0m
+[0;32mI (37156) APP_MAIN: Received data: angle=-19.087723, index=-5026, raw=14501[0m
+[0;32mI (37256) APP_MAIN: Received data: angle=-20.328613, index=-5155, raw=13896[0m
+[0;32mI (37356) APP_MAIN: Received data: angle=-25.548080, index=-6336, raw=13229[0m
+[0;32mI (37456) APP_MAIN: Received data: angle=-16.652985, index=-4556, raw=15184[0m
+[0;32mI (37556) APP_MAIN: Received data: angle=-20.427048, index=-5432, raw=14565[0m
+[0;32mI (37656) APP_MAIN: Received data: angle=-10.737961, index=-3036, raw=15927[0m
+[0;32mI (37756) APP_MAIN: Received data: angle=-11.868896, index=-2999, raw=14227[0m
+[0;32mI (37856) APP_MAIN: Received data: angle=6.579819, index=2792, raw=24003[0m
+[0;32mI (37956) APP_MAIN: Received data: angle=6.524536, index=1924, raw=16692[0m
+[0;32mI (38056) APP_MAIN: Received data: angle=2.406906, index=682, raw=16134[0m
+[0;32mI (38156) APP_MAIN: Received data: angle=2.742279, index=843, raw=17460[0m
+[0;32mI (38256) APP_MAIN: Received data: angle=-3.524033, index=-997, raw=16032[0m
+[0;32mI (38356) APP_MAIN: Received data: angle=-0.840057, index=-241, raw=16026[0m
+[0;32mI (38456) APP_MAIN: Received data: angle=0.840057, index=259, raw=17134[0m
+[0;32mI (38556) APP_MAIN: Received data: angle=-13.574081, index=-3356, raw=13874[0m
+[0;32mI (38656) APP_MAIN: Received data: angle=-13.415207, index=-3464, raw=14496[0m
+[0;32mI (38756) APP_MAIN: Received data: angle=-17.114532, index=-4254, raw=13772[0m
+[0;32mI (38856) APP_MAIN: Received data: angle=-16.292465, index=-4259, raw=14558[0m
+[0;32mI (38956) APP_MAIN: Received data: angle=-8.615646, index=-2456, raw=16148[0m
+[0;32mI (39056) APP_MAIN: Received data: angle=-1.343933, index=-378, raw=15784[0m
+[0;32mI (39156) APP_MAIN: Received data: angle=1.791656, index=506, raw=16058[0m
+[0;32mI (39256) APP_MAIN: Received data: angle=6.579819, index=1869, raw=16176[0m
+[0;32mI (39356) APP_MAIN: Received data: angle=10.846054, index=3181, raw=16574[0m
+[0;32mI (39456) APP_MAIN: Received data: angle=14.837250, index=4364, raw=16469[0m
+[0;32mI (39556) APP_MAIN: Received data: angle=9.652939, index=2705, raw=15901[0m
+[0;32mI (39656) APP_MAIN: Received data: angle=11.169846, index=2989, raw=15102[0m
+[0;32mI (39756) APP_MAIN: Received data: angle=11.277618, index=3257, raw=16272[0m
+[0;32mI (39856) APP_MAIN: Received data: angle=9.162354, index=2669, raw=16453[0m
+[0;32mI (39956) APP_MAIN: Received data: angle=9.380569, index=2785, raw=16796[0m
+[0;32mI (40056) APP_MAIN: Received data: angle=-1.959503, index=-581, raw=16679[0m
+[0;32mI (40156) APP_MAIN: Received data: angle=-3.579819, index=-1002, raw=15928[0m
+[0;32mI (40256) APP_MAIN: Received data: angle=1.231979, index=369, raw=16467[0m
+[0;32mI (40356) APP_MAIN: Received data: angle=5.361023, index=1493, raw=15826[0m
+[0;32mI (40456) APP_MAIN: Received data: angle=13.149963, index=3484, raw=14894[0m
+[0;32mI (40556) APP_MAIN: Received data: angle=14.994141, index=4128, raw=15382[0m
+[0;32mI (40656) APP_MAIN: Received data: angle=18.182541, index=5033, raw=15278[0m
+[0;32mI (40756) APP_MAIN: Received data: angle=18.434952, index=5140, raw=15379[0m
+[0;32mI (40856) APP_MAIN: Received data: angle=19.187698, index=4997, raw=14348[0m
+[0;32mI (40956) APP_MAIN: Received data: angle=21.743454, index=5732, raw=14356[0m
+[0;32mI (41056) APP_MAIN: Received data: angle=20.180725, index=5732, raw=15556[0m
+[0;32mI (41156) APP_MAIN: Received data: angle=10.413239, index=2862, raw=15564[0m
+[0;32mI (41256) APP_MAIN: Received data: angle=1.735703, index=502, raw=16198[0m
+[0;32mI (41356) APP_MAIN: Received data: angle=-4.248779, index=-1174, raw=15740[0m
+[0;32mI (41456) APP_MAIN: Received data: angle=-8.725113, index=-2328, raw=15124[0m
+[0;32mI (41556) APP_MAIN: Received data: angle=-10.196381, index=-2740, raw=15151[0m
+[0;32mI (41656) APP_MAIN: Received data: angle=-8.725113, index=-2433, raw=15819[0m
+[0;32mI (41756) APP_MAIN: Received data: angle=-10.737961, index=-2945, raw=15461[0m
+[0;32mI (41856) APP_MAIN: Received data: angle=-3.244965, index=-901, raw=15856[0m
+[0;32mI (41956) APP_MAIN: Received data: angle=7.187042, index=2078, raw=16356[0m
+[0;32mI (42056) APP_MAIN: Received data: angle=12.350784, index=3546, raw=16191[0m
+[0;32mI (42156) APP_MAIN: Received data: angle=17.216797, index=4890, raw=15763[0m
+[0;32mI (42256) APP_MAIN: Received data: angle=17.063370, index=4576, raw=14861[0m
+[0;32mI (42356) APP_MAIN: Received data: angle=19.586380, index=5141, raw=14442[0m
+[0;32mI (42456) APP_MAIN: Received data: angle=21.307236, index=5723, raw=14641[0m
+[0;32mI (42556) APP_MAIN: Received data: angle=20.081970, index=5317, raw=14505[0m
+[0;32mI (42656) APP_MAIN: Received data: angle=20.328613, index=5269, raw=14209[0m
+[0;32mI (42756) APP_MAIN: Received data: angle=19.784988, index=5851, raw=16242[0m
+[0;32mI (42856) APP_MAIN: Received data: angle=10.629807, index=3119, raw=16610[0m
+[0;32mI (42956) APP_MAIN: Received data: angle=-5.416550, index=-1525, raw=16002[0m
+[0;32mI (43056) APP_MAIN: Received data: angle=-6.745575, index=-1937, raw=16343[0m
+[0;32mI (43156) APP_MAIN: Received data: angle=-7.517593, index=-2150, raw=16194[0m
+[0;32mI (43256) APP_MAIN: Received data: angle=-10.413239, index=-2780, raw=15083[0m
+[0;32mI (43356) APP_MAIN: Received data: angle=-10.792023, index=-2892, raw=15160[0m
+[0;32mI (43456) APP_MAIN: Received data: angle=-11.439117, index=-3097, raw=15284[0m
+[0;32mI (43556) APP_MAIN: Received data: angle=-9.162354, index=-2575, raw=15878[0m
+[0;32mI (43656) APP_MAIN: Received data: angle=-10.304840, index=-2830, raw=15510[0m
+[0;32mI (43756) APP_MAIN: Received data: angle=-8.451324, index=-2380, raw=16005[0m
+[0;32mI (43856) APP_MAIN: Received data: angle=-4.638474, index=-1292, raw=15871[0m
+[0;32mI (43956) APP_MAIN: Received data: angle=-1.175995, index=-343, raw=16298[0m
+[0;32mI (44056) APP_MAIN: Received data: angle=-1.567825, index=-444, raw=16041[0m
+[0;32mI (44156) APP_MAIN: Received data: angle=-1.735703, index=-510, raw=16375[0m
+[0;32mI (44256) APP_MAIN: Received data: angle=-1.623779, index=-466, raw=16164[0m
