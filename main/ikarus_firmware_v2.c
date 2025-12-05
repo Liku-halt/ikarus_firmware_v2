@@ -119,8 +119,11 @@ typedef struct
     int32_t final_tn1[3];
 } calc;
 
-calc c; // for acro mode
-calc w; // for angle mode
+calc c; // for angle mode
+calc w; // for acro mode
+//////////////////////// IMP BLOCK /////////////////////////////////////////////
+#define out_p 0   //outer pid
+c.pid[0] = out_p*q_bit_shift;  //float to fixed
 
 // new construct for the esp now protocall
 typedef struct
@@ -533,12 +536,13 @@ void static inline bias_estim(){
 void static inline error_calculation()
 {
     
-    for (int i = 0; i < 3; i++) w.error[i] = int_to_fixed((int32_t)data.command[i]) -final_angles[i];
+    for (int i = 0; i < 2; i++) c.error[i] = int_to_fixed((int32_t)data.command[i]) -final_angles[i];
+    c.error[2] = int_to_fixed((int32_t)data.command[2]) - q16val[5];
     
 }
 
 
-static inline void pid_calc(void)
+static IRAM_ATTR inline void pid_calc(void)
 {
     const int32_t Kp = float_to_fix(data.p);
     const int32_t Ki = float_to_fix(data.i);
@@ -546,23 +550,27 @@ static inline void pid_calc(void)
     const int32_t YawKp = float_to_fix(y_kp);
     const int32_t YawKi = float_to_fix(y_ki);
     const int32_t YawKd = float_to_fix(y_kd);
-    const int32_t INT_LIM = float_to_fix(200.0f);
-    
+    const int32_t INT_LIM = float_to_fix(500.0f);
 
+    //outer loop implimentation angle -> rate
+    for(int i = 0; i < 2; i++)w.error[i] = q_mul(c.error[i] , w.pid[0]);
+
+    
+    //inner loop implimentation rate -> duty
     for (int i = 0; i < 3; i++)
     {
         const int32_t Kp_use = (i == 2) ? YawKp : Kp;
         const int32_t Ki_use = (i == 2) ? YawKi : Ki;
         const int32_t Kd_use = (i == 2) ? YawKd : Kd;
 
-        int32_t err = w.error[i];
-        int32_t diff = final_angles[i]-w.final_tn1[i]; //this term is differnt it calculate the error btw t and t-1 of sensor readings
+        int32_t err = (i == 2) ? c.error[2] : w.error[i];
+        int32_t diff = q16val[i+3]-w.final_tn1[i]; //this term is differnt it calculate the error btw t and t-1 of sensor readings
         int32_t err_dt = q_mul(err,one_khz);
         
         w.intigrator[i] = q_clamp(w.intigrator[i] + q_mul(err_dt,Ki_use), -INT_LIM, INT_LIM);
         w.pid[i] = q_mul(err, Kp_use) + w.intigrator[i] - q_mul(q_div(diff,one_khz), Kd_use);
         w.prev_error[i] = err;
-        w.final_tn1[i] = final_angles[i];
+        w.final_tn1[i] = q16val[i+3];
 
     }
 }
@@ -606,7 +614,7 @@ void setup_1ms_timer(void) {
     ESP_LOGI(TAG, "Timer enabled");
     
     ESP_ERROR_CHECK(gptimer_start(control_timer));
-    ESP_LOGI(TAG, "Timer started - running at EXACTLY 1ms intervals");
+    ESP_LOGI(TAG, "Timer started - running at 1ms intervals");
 }
 
 //creating tasks
@@ -686,6 +694,7 @@ void IRAM_ATTR control_task(void *pvParameters){
   }
     
 }
+
 
 // now the main
 void app_main(void)
