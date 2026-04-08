@@ -1,18 +1,10 @@
-Frame: Symmetrical X (120mm motor spacing)
-Weight: 58g AUW
-Motors: 4x 720 coreless brushed
-Props: 65mm 2-blade
-Battery: 3.7V LiPo ~360mAh 25C
-MCU: ESP32-C3 (ESP-IDF v5.x)
-Sensors: MPU6050/IMU (I2C), optional ToF
+A lightweight, firmware-driven quadcopter built on the ESP-IDF v5.x framework. 
+This project implements a full flight control stack on a single-core RISC-V MCU,
+featuring ESP-NOW communication and a cascaded PID control loop.
 
+The project is still far from completion.
+The 1ms loop is currently jittery because of the single-core architecture (ESP32-C3);
+the ESP-NOW protocol is inherently blocking, which causes fluctuations in the 1ms control loop timing.
 
-main/
-├── tasks/
-│   ├── control_task (1ms PID cascade: rate → angle)
-│   ├── sensor_task (IMU fusion, 500Hz)
-│   └── comms_task (ESP-NOW RX/TX)
-├── drivers/ (I2C/SPI/UART/PWM)
-├── pid/ (tunable gains: e.g. P=0.70, I=0.044, D=0.16)
-├── fusion/ (Madgwick/Kalman)
-└── platformio.ini (ESP-IDF components)
+In the future, I will build the controller with much faster MCUs capable of running the flight loop in less than 0.5ms.
+These will be powerful enough to handle the estimation system, a part specifically designed for swarm applications.
