@@ -4,6 +4,45 @@ A lightweight, firmware-driven quadcopter flight controller built on **ESP-IDF v
 
 > ⚠️ **Status: work in progress.** This is an active hobby/research project, not a finished or flight-proven product. Expect rough edges, dead code paths, and breaking changes.
 
+## Gallery
+
+<table>
+<tr>
+<td width="50%">
+
+**Custom flight controller PCB**
+![Custom flight controller PCB](WhatsApp%20Image%202026-09-08%20at%2012.36.50.jpeg)
+
+</td>
+<td width="50%">
+
+**KiCad routing**
+![KiCad PCB routing](WhatsApp%20Image%202026-09-08%20at%2012.37.42.jpeg)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Frame CAD model**
+![Frame CAD render](WhatsApp%20Image%202026-09-08%20at%2012.37.43.jpeg)
+
+</td>
+<td width="50%">
+
+**Assembled quad, bench test**
+![Assembled quadcopter on bench](WhatsApp%20Image%202026-09-08%20at%2012.37.04.jpeg)
+
+</td>
+</tr>
+</table>
+
+**Flight test clip**
+
+<video src="WhatsApp%20Video%202026-09-08%20at%2012.37.04.mp4" controls width="600">
+Your browser/viewer doesn't support inline video — <a href="WhatsApp%20Video%202026-09-08%20at%2012.37.04.mp4">watch it here</a> instead.
+</video>
+
 ## Overview
 
 Ikarus is a from-scratch flight controller stack, written without an RTOS abstraction layer beyond FreeRTOS itself — no Betaflight/ArduPilot dependency. The goals of this rewrite (v2) are:
@@ -53,7 +92,8 @@ Ikarus is a from-scratch flight controller stack, written without an RTOS abstra
 │   ├── atan_lut.c / atan_lut.h # Fixed-point lookup-table atan2 implementation
 ├── sdkconfig                   # ESP-IDF project configuration (target: esp32c3)
 ├── flight_2_1.pdf              # Flight log / test notes
-└── Part Studio 1 - ikaris_new555.stl   # Frame / mechanical CAD model
+├── Part Studio 1 - ikaris_new555.stl   # Frame / mechanical CAD model
+└── WhatsApp Image/Video *.jpeg/.mp4    # Build photos + flight test clip (see Gallery above)
 ```
 
 ## How it works
